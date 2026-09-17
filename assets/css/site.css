@@ -1,0 +1,669 @@
+/* ============================================================
+   Josh Chappell — design system
+   Edit the tokens below to restyle the entire site at once.
+   ============================================================ */
+
+:root {
+  /* --- Color --- */
+  --ink:        #060A12;   /* deep blue-hour black     */
+  --ink-2:      #0C131F;   /* raised surfaces (cards)  */
+  --ink-3:      #182234;   /* borders, hairlines       */
+  --paper:      #F2EDE4;   /* primary text             */
+  --paper-dim:  #9BA5B4;   /* secondary text           */
+  --paper-faint:#5F6B7E;   /* tertiary / meta text     */
+  --gold:       #E0A44A;   /* primary accent           */
+  --violet:     #7C9BD4;   /* secondary accent (dusk)  */
+  --teal:       #5FA8B8;   /* tertiary accent          */
+
+  /* --- Type --- */
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* --- Layout --- */
+  --gutter: 24px;
+  --max:    1180px;
+  --radius: 14px;
+
+  /* --- Motion --- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Subtle film grain over the whole page — the "artful" texture. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--gold); color: var(--ink); }
+
+/* ---------- Layout primitives ---------- */
+
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section { padding-block: clamp(64px, 10vw, 120px); }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5em;
+  font-variation-settings: "SOFT" 20, "WONK" 1;
+}
+
+h1 { font-size: clamp(44px, 8vw, 86px); }
+h2 { font-size: clamp(32px, 5vw, 50px); }
+h3 { font-size: clamp(21px, 2.6vw, 27px); letter-spacing: -0.01em; }
+
+p { margin: 0 0 1.1em; }
+
+.lede {
+  font-size: clamp(18px, 2.2vw, 21px);
+  color: var(--paper-dim);
+  max-width: 60ch;
+}
+
+.rule {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(90deg, var(--ink-3), transparent);
+  margin: 0;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--ink) 78%, transparent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s var(--ease);
+}
+.site-header.scrolled { border-bottom-color: var(--ink-3); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 68px;
+}
+
+.brand {
+  font-family: var(--display);
+  font-size: 20px;
+  color: var(--paper);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.brand:hover { text-decoration: none; color: var(--gold); }
+.brand .dot { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: var(--paper-dim);
+  font-size: 15px;
+  transition: color 0.2s var(--ease);
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] { color: var(--paper); text-decoration: none; }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--paper);
+  cursor: pointer;
+  padding: 8px;
+  margin-right: -8px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease), background 0.2s var(--ease),
+              border-color 0.2s var(--ease), color 0.2s var(--ease);
+  white-space: nowrap;
+}
+.btn:hover { text-decoration: none; transform: translateY(-2px); }
+
+.btn-primary { background: var(--gold); color: var(--ink); }
+.btn-primary:hover { background: #F0B75E; }
+
+.btn-ghost {
+  border-color: var(--ink-3);
+  color: var(--paper);
+  background: transparent;
+}
+.btn-ghost:hover { border-color: var(--paper-faint); background: var(--ink-2); }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  min-height: min(88vh, 780px);
+  display: flex;
+  align-items: center;
+  padding-block: 80px;
+  overflow: hidden;
+}
+
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.55;
+}
+
+/* Fade the generative art out toward the bottom so text stays readable. */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 30% 45%,
+              transparent 0%, color-mix(in srgb, var(--ink) 70%, transparent) 70%,
+              var(--ink) 100%);
+}
+
+.hero .wrap { position: relative; z-index: 2; }
+
+.hero h1 { max-width: 15ch; margin-bottom: 24px; }
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+  font-variation-settings: "SOFT" 60, "WONK" 1;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+/* ---------- Cards / grid ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--ink-2);
+  border: 1px solid var(--ink-3);
+  border-radius: var(--radius);
+  padding: 26px;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+  color: inherit;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent, var(--gold)) 45%, var(--ink-3));
+  text-decoration: none;
+}
+
+/* Colored hairline that lights up on hover. */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent, var(--gold));
+  opacity: 0.35;
+  transition: opacity 0.3s var(--ease);
+}
+.card:hover::before { opacity: 1; }
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent, var(--gold));
+  border: 1px solid color-mix(in srgb, var(--accent, var(--gold)) 30%, transparent);
+  background: color-mix(in srgb, var(--accent, var(--gold)) 9%, transparent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.price {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--paper);
+  white-space: nowrap;
+}
+.price.free { color: var(--teal); }
+
+.card h3 { margin-bottom: 10px; color: var(--paper); }
+
+.card p {
+  color: var(--paper-dim);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.card-foot {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--paper-faint);
+  font-family: var(--mono);
+}
+.card-cta { color: var(--accent, var(--gold)); }
+.card:hover .card-cta { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Filter pills ---------- */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.filter {
+  background: transparent;
+  border: 1px solid var(--ink-3);
+  color: var(--paper-dim);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.filter:hover { color: var(--paper); border-color: var(--paper-faint); }
+.filter[aria-pressed="true"] {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink);
+}
+
+.empty {
+  color: var(--paper-faint);
+  font-family: var(--mono);
+  font-size: 14px;
+  padding: 48px 0;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* ---------- Section heading row ---------- */
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.section-head h2 { margin-bottom: 0; }
+.section-head .lede { margin: 12px 0 0; }
+
+/* ---------- Article (guide pages) ---------- */
+
+.article {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-block: 64px 96px;
+}
+.article-meta {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+  margin-bottom: 18px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.article h1 { font-size: clamp(36px, 6vw, 58px); margin-bottom: 20px; }
+.article h2 { font-size: clamp(26px, 3.4vw, 34px); margin-top: 2em; }
+.article h3 { margin-top: 1.8em; }
+.article p, .article li { color: #D6D1C8; }
+.article ul, .article ol { padding-left: 1.3em; }
+.article li { margin-bottom: 0.5em; }
+.article blockquote {
+  margin: 2em 0;
+  padding: 4px 0 4px 24px;
+  border-left: 2px solid var(--gold);
+  font-family: var(--display);
+  font-size: 21px;
+  font-style: italic;
+  color: var(--paper);
+}
+.article code {
+  font-family: var(--mono);
+  font-size: 0.87em;
+  background: var(--ink-2);
+  border: 1px solid var(--ink-3);
+  border-radius: 5px;
+  padding: 2px 6px;
+  color: var(--gold);
+}
+.article pre {
+  background: var(--ink-2);
+  border: 1px solid var(--ink-3);
+  border-radius: var(--radius);
+  padding: 20px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.article pre code { background: none; border: 0; padding: 0; color: #D6D1C8; }
+.article img { border-radius: var(--radius); margin: 2em 0; }
+.article hr { border: 0; height: 1px; background: var(--ink-3); margin: 3em 0; }
+
+.callout {
+  background: var(--ink-2);
+  border: 1px solid var(--ink-3);
+  border-left: 3px solid var(--violet);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 2em 0;
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout strong { color: var(--paper); }
+
+/* ---------- CTA band ---------- */
+
+.band {
+  border-block: 1px solid var(--ink-3);
+  background:
+    radial-gradient(ellipse 60% 100% at 50% 100%,
+      color-mix(in srgb, var(--violet) 12%, transparent), transparent 70%),
+    var(--ink-2);
+  text-align: center;
+}
+.band .wrap { max-width: 660px; }
+.band h2 { margin-bottom: 16px; }
+.band .lede { margin-inline: auto; }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--ink-3);
+  padding-block: 56px 40px;
+  color: var(--paper-faint);
+  font-size: 14.5px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 44px;
+}
+.site-footer h4 {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--paper-dim);
+  margin-bottom: 16px;
+}
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+.site-footer li { margin-bottom: 10px; }
+.site-footer li a { color: var(--paper-faint); }
+.site-footer li a:hover { color: var(--paper); text-decoration: none; }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--ink-3);
+  font-size: 13px;
+}
+
+/* ---------- Reveal on scroll ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--ink-2);
+    border-bottom: 1px solid var(--ink-3);
+    padding: 8px 0;
+    display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { padding: 0 var(--gutter); }
+  .nav-links a { display: block; padding: 13px 0; font-size: 16px; }
+  .nav-links .btn { margin: 10px 0 14px; justify-content: center; }
+  .hero { min-height: auto; padding-block: 64px 72px; }
+  .hero-actions .btn { flex: 1 1 100%; justify-content: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  #hero-canvas { display: none; }
+}
+
+/* ============================================================
+   Photographic hero  —  split composition
+
+   The source frame is a full-width silhouette with no empty
+   space to set type over, so instead of hiding the subject
+   behind a scrim the hero splits: type on the left, the frame
+   bleeding off the right edge, the two joined by a gradient.
+   On phones it falls back to full-bleed behind a heavy veil.
+
+   To change the hero, replace assets/img/hero.jpg (and
+   hero-mobile.jpg). Nothing else needs editing.
+   ============================================================ */
+
+.hero.has-photo {
+  min-height: min(90vh, 820px);
+  padding-block: 72px;
+}
+
+.hero-photo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 62%;
+  z-index: 0;
+  overflow: hidden;          /* clips the drift so it cannot cross the veil */
+}
+
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: 62% 46%;
+  filter: saturate(1.12) contrast(1.1) brightness(0.86);
+  animation: heroDrift 34s ease-in-out infinite alternate;
+}
+
+@keyframes heroDrift {
+  from { transform: scale(1.03); }
+  to   { transform: scale(1.09); }
+}
+
+/* Feather the photo into the page on every edge so it reads as
+   one image, not a pasted-in rectangle. */
+.hero-veil {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 62%;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      var(--ink) 0%,
+      color-mix(in srgb, var(--ink) 82%, transparent) 16%,
+      color-mix(in srgb, var(--ink) 30%, transparent) 42%,
+      transparent 70%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--ink) 70%, transparent) 0%,
+      transparent 18%,
+      transparent 68%,
+      color-mix(in srgb, var(--ink) 75%, transparent) 92%,
+      var(--ink) 100%);
+}
+
+/* With a photo present the generative art becomes a faint
+   texture across the whole hero rather than the main event. */
+.hero.has-photo #hero-canvas { z-index: 2; opacity: 0.12; mix-blend-mode: screen; }
+.hero.has-photo::after { display: none; }
+.hero.has-photo .wrap { z-index: 3; }
+
+/* Keep the type clear of the photo on wide screens. */
+.hero.has-photo h1 {
+  font-size: clamp(40px, 4.6vw, 64px);
+  max-width: 11ch;
+}
+.hero.has-photo .lede { max-width: 36ch; }
+
+@media (min-width: 1100px) {
+  .hero-photo, .hero-veil { width: 58%; }
+}
+
+/* ---- Narrow screens: full bleed behind a heavy veil ---- */
+@media (max-width: 900px) {
+  .hero-photo { width: 100%; }
+  .hero-photo::before {
+    background-image: url("../img/hero-mobile.jpg");
+    background-position: 42% 40%;
+    filter: saturate(1.1) contrast(1.12) brightness(0.58);
+  }
+  .hero-veil {
+    width: 100%;
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--ink) 78%, transparent) 0%,
+        color-mix(in srgb, var(--ink) 55%, transparent) 30%,
+        color-mix(in srgb, var(--ink) 80%, transparent) 72%,
+        var(--ink) 100%);
+  }
+  .hero.has-photo h1 { max-width: 15ch; font-size: clamp(40px, 8vw, 62px); }
+  .hero.has-photo .lede { max-width: 46ch; }
+  .hero.has-photo h1,
+  .hero.has-photo .lede {
+    text-shadow: 0 2px 26px color-mix(in srgb, var(--ink) 85%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo::before { animation: none; transform: none; }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Skills: the starter pack — Josh Chappell</title>
+<meta name="description" content="What a Claude skill actually is, the folder structure that works, and the single most common reason homemade skills never fire.">
+<link rel="canonical" href="https://jchappellmedia.github.io/guides/claude-skills-starter.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Claude Skills: the starter pack">
+<meta property="og:description" content="What a Claude skill actually is, the folder structure that works, and the single most common reason homemade skills never fire.">
+<meta property="og:url" content="https://jchappellmedia.github.io/guides/claude-skills-starter.html">
+<meta property="og:image" content="https://jchappellmedia.github.io/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+ "headline":"Claude Skills: the starter pack",
+ "description":"What a Claude skill actually is, the folder structure that works, and the single most common reason homemade skills never fire.",
+ "datePublished":"2026-09-16",
+ "author":{"@type":"Person","name":"Josh Chappell"},
+ "mainEntityOfPage":"https://jchappellmedia.github.io/guides/claude-skills-starter.html"}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html">Josh Chappell<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../guides.html">Guides</a></li>
+      <li><a href="../skills.html">Claude Skills</a></li>
+      <li><a href="../products.html">Products</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a class="btn btn-ghost" href="https://youtube.com/@jchappellmedia" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <article class="wrap article">
+    <div class="article-meta">
+      <span>Claude Skill</span><span>September 16, 2026</span><span>6 min read</span>
+    </div>
+    <h1>Claude Skills: the starter pack</h1>
+
+    <p class="lede">A skill is the difference between explaining your process to Claude every single time and never explaining it again. Here's the structure that works, and the mistake that stops most homemade skills from ever running.</p>
+
+    <h2>What a skill actually is</h2>
+    <p>A skill is a folder. Inside it is a file called <code>SKILL.md</code>, and optionally any scripts, templates or reference documents that file points to. When Claude decides your skill is relevant to the task at hand, it reads <code>SKILL.md</code> and follows it.</p>
+    <p>That's the whole mechanism. The complexity isn't in the format — it's in getting Claude to <em>choose</em> your skill at the right moment.</p>
+
+    <h2>The folder structure</h2>
+    <pre><code>my-skill/
+├── SKILL.md          ← required; the instructions
+├── references/       ← optional; docs Claude reads on demand
+│   └── examples.md
+└── scripts/          ← optional; things Claude runs
+    └── build.py</code></pre>
+    <p>Keep <code>SKILL.md</code> short. Anything long, rarely needed, or reference-shaped belongs in <code>references/</code> so it only loads when it's actually wanted.</p>
+
+    <h2>The frontmatter is the whole ballgame</h2>
+    <p>Every <code>SKILL.md</code> opens with YAML frontmatter:</p>
+    <pre><code>---
+name: invoice-reconciler
+description: Reconcile vendor invoices against purchase orders.
+  Use when the user mentions invoices, POs, vendor billing,
+  reconciliation, or uploads an invoice PDF or spreadsheet.
+---</code></pre>
+
+    <div class="callout">
+      <p><strong>This is where most skills die.</strong> The <code>description</code> is the only thing Claude sees when deciding whether to load your skill. If it describes what the skill <em>is</em> but not <em>when to use it</em>, the skill will sit there unused forever.</p>
+    </div>
+
+    <p>Write the description in two parts: one sentence on what it does, then an explicit <strong>"Use when…"</strong> listing the words and situations that should trigger it. Include the vocabulary a real person would actually type — including the sloppy version.</p>
+
+    <h2>Write the body as instructions, not documentation</h2>
+    <p>Under the frontmatter, write what you'd tell a capable new hire on day one. Imperative, specific, ordered:</p>
+    <ul>
+      <li><strong>Steps in order</strong>, not a description of the domain.</li>
+      <li><strong>Decision rules</strong> for the branches — "if the PO is missing, do X, don't guess."</li>
+      <li><strong>What done looks like</strong>, so it knows when to stop.</li>
+      <li><strong>What not to do</strong> — the failure modes you've actually hit.</li>
+    </ul>
+    <p>Resist writing background theory. Claude already knows the theory; what it doesn't know is <em>your</em> process.</p>
+
+    <h2>Five skills worth building first</h2>
+    <ol>
+      <li><strong>Your file conventions</strong> — where things go in your projects, how you name them.</li>
+      <li><strong>Your review checklist</strong> — whatever you look for before shipping anything.</li>
+      <li><strong>Your writing voice</strong> — with three real before/after examples, which beat any amount of adjectives.</li>
+      <li><strong>A recurring report</strong> — the one you rebuild monthly from the same three sources.</li>
+      <li><strong>Your intake process</strong> — how a new request becomes a scoped piece of work.</li>
+    </ol>
+
+    <h2>Testing whether it fires</h2>
+    <p>Don't ask "use my skill to do X" — that proves nothing. Start a fresh conversation and describe the task the way you naturally would, with no mention of the skill. If it doesn't fire, the description is wrong, not the body. Add the words you just used to the "Use when" line and try again.</p>
+
+    <blockquote>A skill that never triggers is worth exactly as much as no skill at all. Spend your time on the description.</blockquote>
+
+    <h2>Where to go next</h2>
+    <p>Once a skill works, the upgrade path is almost always the same: move the long parts into <code>references/</code>, replace prose instructions with a script where the task is deterministic, and add the edge case you just hit to the "what not to do" list. Skills get good by being corrected, not by being designed.</p>
+
+    <hr>
+    <p><a href="../guides.html">&larr; Back to the library</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html">Josh Chappell<span class="dot">.</span></a>
+        <p style="margin-top:14px;max-width:34ch">Guides, Claude skills, knowledge bases and business plans for building real things with AI.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="../guides.html">Guides</a></li>
+          <li><a href="../skills.html">Claude Skills</a></li>
+          <li><a href="../products.html">Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://youtube.com/@jchappellmedia" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://github.com/jchappellmedia" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Josh Chappell</span>
+      <span>Built and hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

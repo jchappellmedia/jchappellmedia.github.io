@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The knowledge base blueprint — Josh Chappell</title>
+<meta name="description" content="How to structure a knowledge base an AI can navigate — chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.">
+<link rel="canonical" href="https://jchappellmedia.github.io/guides/knowledge-base-blueprint.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The knowledge base blueprint">
+<meta property="og:description" content="How to structure a knowledge base an AI can navigate — chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.">
+<meta property="og:url" content="https://jchappellmedia.github.io/guides/knowledge-base-blueprint.html">
+<meta property="og:image" content="https://jchappellmedia.github.io/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+ "headline":"The knowledge base blueprint",
+ "description":"How to structure a knowledge base an AI can navigate — chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.",
+ "datePublished":"2026-09-16",
+ "author":{"@type":"Person","name":"Josh Chappell"},
+ "mainEntityOfPage":"https://jchappellmedia.github.io/guides/knowledge-base-blueprint.html"}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html">Josh Chappell<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../guides.html">Guides</a></li>
+      <li><a href="../skills.html">Claude Skills</a></li>
+      <li><a href="../products.html">Products</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a class="btn btn-ghost" href="https://youtube.com/@jchappellmedia" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <article class="wrap article">
+    <div class="article-meta">
+      <span>Knowledge Base</span><span>September 16, 2026</span><span>8 min read</span>
+    </div>
+    <h1>The knowledge base blueprint</h1>
+
+    <p class="lede">Most knowledge bases are organised for the person who built them. Retrieval doesn't care how tidy your folders are — it cares whether each chunk makes sense alone. That difference is why so many AI setups confidently return the wrong answer.</p>
+
+    <h2>The core problem</h2>
+    <p>When an AI searches your knowledge base, it doesn't read the whole thing. It pulls a handful of passages that look relevant and answers from those. So every passage has to survive being read completely out of context.</p>
+    <p>A heading three levels up that says "2025 Pricing" doesn't travel with the paragraph underneath it. If that paragraph just says "the rate increases to $180 after the first tier," the AI has no idea what year, what product, or what tier. It will still answer. That's the failure mode.</p>
+
+    <h2>Rule one: every chunk carries its own context</h2>
+    <p>Write so that any single paragraph, lifted out and shown to a stranger, still means something. In practice:</p>
+    <ul>
+      <li>Repeat the subject instead of using "it" or "this" across a section break.</li>
+      <li>Put dates and versions <em>inside</em> the sentence, not only in the heading.</li>
+      <li>Restate the qualifier — "for enterprise accounts" — in each rule it applies to.</li>
+    </ul>
+    <p>It reads slightly redundant to a human. It reads correctly to a machine. Optimise for the machine; humans skim past repetition without noticing.</p>
+
+    <h2>Rule two: one document, one answerable question</h2>
+    <p>The best unit isn't the topic — it's the question. A file called <code>refund-policy.md</code> is fine. A file called <code>how-do-refunds-work-after-90-days.md</code> is better, because it matches the shape of what someone will actually ask.</p>
+    <p>When a document tries to cover five questions, retrieval returns it for all five and the AI has to guess which part you meant. Split it.</p>
+
+    <h2>Rule three: name files the way people ask</h2>
+    <p>Filenames are high-signal for retrieval. Use the words your readers use, not your internal jargon:</p>
+    <pre><code>✗  KB-OPS-114-v3-FINAL.md
+✗  procedures/tier2/escalation.md
+✓  when-to-escalate-a-support-ticket.md
+✓  vendor-invoice-approval-limits-2026.md</code></pre>
+
+    <h2>Rule four: state facts once, link everywhere else</h2>
+    <p>The moment the same number lives in two files, one of them is going stale. Pick the file that owns each fact, and have every other mention link to it rather than repeat it.</p>
+    <div class="callout">
+      <p><strong>The stale-duplicate trap.</strong> When two chunks disagree, retrieval has no way to know which is current — and it may return the old one. Contradictions inside a knowledge base are worse than gaps, because a gap produces "I don't know" and a contradiction produces confident nonsense.</p>
+    </div>
+
+    <h2>Rule five: date everything that can expire</h2>
+    <p>Prices, policies, headcount, tooling, integrations. Put an explicit "as of" in the text itself:</p>
+    <pre><code>As of March 2026, the standard tier is $49/month.</code></pre>
+    <p>This gives the AI something to reason about instead of silently assuming the number is current, and it makes stale content findable later with a single search.</p>
+
+    <h2>A structure that holds up</h2>
+    <pre><code>knowledge-base/
+├── README.md              ← what's here, and what is NOT here
+├── decisions/             ← why things are the way they are
+├── how-to/                ← one task per file
+├── reference/             ← facts, tables, limits, definitions
+└── archive/               ← superseded, clearly marked</code></pre>
+    <p>The two that get skipped and matter most: <strong>decisions</strong>, because "why" is what people actually can't reconstruct; and <strong>archive</strong>, because deleting old material loses history while leaving it in place poisons retrieval.</p>
+
+    <h2>Testing it honestly</h2>
+    <p>Write down the twenty questions people really ask. Ask them cold, in a fresh session, phrased naturally. Score each answer right, wrong, or hedged.</p>
+    <p>Then — this is the part people skip — go and read the passage it pulled from. A right answer from the wrong chunk is luck, and luck doesn't survive your next edit.</p>
+
+    <blockquote>Fix the source, not the prompt. Prompt patches hide structural problems; they never remove them.</blockquote>
+
+    <h2>What good looks like</h2>
+    <p>A knowledge base is working when new questions get correct answers without anyone touching a prompt, when you can trace every answer to one file that owns that fact, and when the fix for a wrong answer is obvious within about a minute. If any of those isn't true yet, the structure is still doing the damage — not the model.</p>
+
+    <hr>
+    <p><a href="../guides.html">&larr; Back to the library</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html">Josh Chappell<span class="dot">.</span></a>
+        <p style="margin-top:14px;max-width:34ch">Guides, Claude skills, knowledge bases and business plans for building real things with AI.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="../guides.html">Guides</a></li>
+          <li><a href="../skills.html">Claude Skills</a></li>
+          <li><a href="../products.html">Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://youtube.com/@jchappellmedia" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://github.com/jchappellmedia" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Josh Chappell</span>
+      <span>Built and hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
