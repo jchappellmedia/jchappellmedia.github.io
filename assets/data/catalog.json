@@ -1,6 +1,9 @@
 {
   "_README": "ADD NEW ITEMS HERE. Copy any block below, change the values, done. The site rebuilds its grids automatically. Fields: id (unique, no spaces) | title | blurb (1-2 sentences) | type: guide|skill|knowledge-base|business-plan|tool | price: 'Free' or '$29' etc | url (where it goes) | featured: true shows it on the homepage | date: YYYY-MM-DD | cta (button text, optional) | badge (optional, e.g. 'New')",
-
+  "stripe": {
+    "_README": "Your Stripe PUBLISHABLE key. It starts with pk_live_ or pk_test_ and is designed to be public - it is safe in this file. NEVER put a secret key (sk_...) here or anywhere in this repo. Leave blank until you have created products in Stripe.",
+    "publishableKey": ""
+  },
   "items": [
     {
       "id": "claude-skills-starter",
@@ -17,7 +20,7 @@
     {
       "id": "knowledge-base-blueprint",
       "title": "The Knowledge Base Blueprint",
-      "blurb": "How to structure a knowledge base an AI can actually navigate — chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.",
+      "blurb": "How to structure a knowledge base an AI can actually navigate \u2014 chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.",
       "type": "knowledge-base",
       "price": "Free",
       "url": "guides/knowledge-base-blueprint.html",
@@ -28,7 +31,7 @@
     {
       "id": "ai-business-plan-kit",
       "title": "AI Business Plan Kit",
-      "blurb": "The full template I use to take a business idea from one sentence to a funded plan — market sizing, unit economics, and the AI prompts that pressure-test every assumption.",
+      "blurb": "The full template I use to take a business idea from one sentence to a funded plan \u2014 market sizing, unit economics, and the AI prompts that pressure-test every assumption.",
       "type": "business-plan",
       "price": "$49",
       "url": "#",
@@ -37,14 +40,26 @@
       "cta": "Coming soon"
     }
   ],
-
-  "_EXAMPLE_PAID_PRODUCT": {
-    "id": "example-paid",
-    "title": "Name of your paid product",
-    "blurb": "One or two sentences on what the buyer gets and why it is worth the money.",
+  "_EXAMPLE_PAYMENT_LINK": {
+    "_how": "Simplest. Stripe Dashboard > Payment Links > create one, copy the URL into 'url'. Nothing else needed - not even the publishable key.",
+    "id": "example-payment-link",
+    "title": "Product sold with a Stripe Payment Link",
+    "blurb": "Clicking the card sends the buyer straight to Stripe's hosted checkout.",
     "type": "business-plan",
+    "price": "$49",
+    "url": "https://buy.stripe.com/REPLACE_WITH_YOUR_LINK",
+    "featured": true,
+    "date": "2026-10-01",
+    "cta": "Buy now"
+  },
+  "_EXAMPLE_BUY_BUTTON": {
+    "_how": "Keeps the buyer on your site. Stripe Dashboard > Product catalogue > your product > Create buy button, then copy the buy-button-id. Requires stripe.publishableKey above to be filled in.",
+    "id": "example-buy-button",
+    "title": "Product sold with an embedded Stripe button",
+    "blurb": "Clicking the card opens a checkout page on this site with Stripe's button on it.",
+    "type": "knowledge-base",
     "price": "$29",
-    "url": "https://yourname.gumroad.com/l/product-slug",
+    "stripeBuyButtonId": "buy_btn_REPLACE_WITH_YOURS",
     "featured": true,
     "date": "2026-10-01",
     "cta": "Get it"

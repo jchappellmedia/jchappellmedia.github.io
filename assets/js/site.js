@@ -43,7 +43,9 @@
 
   function cardHTML(item) {
     var meta = TYPES[item.type] || { label: item.type || "Item", color: "var(--gold)" };
-    var href = resolve(item.url);
+    var href = item.stripeBuyButtonId
+      ? DEPTH + "checkout.html?id=" + encodeURIComponent(item.id)
+      : resolve(item.url);
     var isExternal = /^https?:/.test(href);
     var isFree = /free/i.test(item.price || "");
     var unavailable = href === "#";
@@ -86,6 +88,8 @@
 
   function boot(catalog) {
     var items = (catalog.items || []).slice().sort(sortNewest);
+    window.__catalog = catalog;
+    if (typeof window.onCatalogReady === "function") window.onCatalogReady(catalog);
 
     document.querySelectorAll("[data-grid]").forEach(function (gridEl) {
       var mode = gridEl.getAttribute("data-grid");            // "featured" | "all" | a type name
@@ -254,7 +258,8 @@
     heroArt();
     observeReveals(document);
 
-    if (!document.querySelector("[data-grid]")) return;
+    if (!document.querySelector("[data-grid]") &&
+        typeof window.onCatalogReady !== "function") return;
 
     fetch(DEPTH + "assets/data/catalog.json", { cache: "no-cache" })
       .then(function (r) {

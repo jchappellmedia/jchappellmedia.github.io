@@ -108,6 +108,93 @@ GitHub rebuilds the site in about a minute.
 
 ---
 
+## Taking payments with Stripe
+
+This site is static — there is no server — so Stripe is wired up the two ways
+that work without one. Both are fully supported; pick per product.
+
+> ### The one security rule
+> Your **publishable** key (`pk_live_…` / `pk_test_…`) is public by design and
+> belongs in `catalog.json`. Your **secret** key (`sk_…`) must *never* go in
+> this repo, in any file, ever — this repository is public. If you ever paste
+> one here by accident, roll it immediately in the Stripe Dashboard.
+
+### Option A — Payment Links (easiest, start here)
+
+No key needed, no configuration, works in two minutes.
+
+1. Stripe Dashboard → **Payment Links** → **＋ New**.
+2. Create or pick the product, set the price, and for a digital download set
+   the post-purchase page to deliver the file (or upload it as the product
+   file).
+3. Copy the link — it looks like `https://buy.stripe.com/aEU5kQ...`.
+4. In `catalog.json`, paste it as that item's `url`:
+
+```json
+{
+  "id": "ai-business-plan-kit",
+  "title": "AI Business Plan Kit",
+  "price": "$49",
+  "url": "https://buy.stripe.com/aEU5kQ...",
+  "cta": "Buy now"
+}
+```
+
+The card now sends buyers straight to Stripe's hosted checkout. Done.
+
+### Option B — Buy Button (keeps buyers on your site)
+
+The buyer lands on a checkout page here, with Stripe's own button embedded, so
+the URL stays on your domain until they pay.
+
+1. Fill in your publishable key once, at the top of `catalog.json`:
+
+```json
+"stripe": { "publishableKey": "pk_live_51ABC..." }
+```
+
+   Find it under Stripe Dashboard → **Developers → API keys**.
+
+2. Stripe Dashboard → **Product catalogue** → your product → **Create buy
+   button** → copy the **buy button ID** (`buy_btn_…`).
+3. Add it to the item — and leave `url` off entirely:
+
+```json
+{
+  "id": "knowledge-base-blueprint",
+  "title": "The Knowledge Base Blueprint",
+  "price": "$29",
+  "stripeBuyButtonId": "buy_btn_1ABC...",
+  "cta": "Get it"
+}
+```
+
+The card now opens `checkout.html?id=knowledge-base-blueprint`, which renders
+the product and the Stripe button. Nothing else to build.
+
+### Which to use
+
+| | Payment Link | Buy Button |
+|---|---|---|
+| Setup | 2 minutes, no key | 5 minutes, needs publishable key |
+| Buyer leaves your domain | Yes | No, until checkout |
+| Good for | Getting the first sale up fast | A more finished storefront feel |
+
+### Testing before you go live
+
+Use your **test-mode** keys and a test Buy Button first
+(`pk_test_…`), and pay with card `4242 4242 4242 4242`, any future expiry, any
+CVC. Swap to live keys when you're happy.
+
+### What Stripe handles, and what it doesn't
+
+Stripe handles the payment, the receipt, card data, and — if you set it up on
+the product — delivering the digital file. It does **not** know anything about
+this site, so there is no order history or licence checking here. For digital
+products that is usually exactly what you want.
+
+---
+
 ## Moving to a different address later
 
 The content is portable — nothing is hard-wired to this URL except the
