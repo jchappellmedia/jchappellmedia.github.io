@@ -8,13 +8,13 @@
     {
       "id": "sd-video-recovery",
       "title": "SD Card Video Recovery",
-      "blurb": "Get back camera clips you deleted or formatted off an SD card. A free, read-only tool built for Sony that works with most cameras.",
-      "type": "tool",
+      "blurb": "A free Claude skill that gets back camera clips you deleted or formatted off an SD card. Plug in the card, tell Claude what you lost, and it does the rest.",
+      "type": "skill",
       "price": "Free",
       "url": "sd-recovery.html",
       "featured": true,
       "date": "2026-09-28",
-      "cta": "Get the tool",
+      "cta": "Get the skill",
       "badge": "New"
     },
     {

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SD Card Video Recovery — Josh Chappell</title>
-<meta name="description" content="A free, read-only tool that recovers deleted or formatted-over camera clips from your SD card. Built for Sony, works with most cameras. Mac and Linux.">
+<title>SD Card Video Recovery (Claude Skill) — Josh Chappell</title>
+<meta name="description" content="A free Claude skill that recovers deleted or formatted-over camera clips from your SD card. Read-only. Built for Sony, works with most cameras. Runs in Claude Code on Mac and Linux.">
 <link rel="canonical" href="https://jchappellmedia.github.io/sd-recovery.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Recover deleted camera clips from your SD card">
-<meta property="og:description" content="The free tool that got back a 31-minute 4K clip after the card was formatted and recorded over.">
+<meta property="og:description" content="The free Claude skill that got back a 31-minute 4K clip after the card was formatted and recorded over.">
 <meta property="og:url" content="https://jchappellmedia.github.io/sd-recovery.html">
 <meta property="og:image" content="https://jchappellmedia.github.io/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -17,7 +17,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication",
  "name":"SD Card Video Recovery",
- "description":"Read-only tool that recovers deleted or formatted-over camera video (MP4/MOV) from exFAT SD cards.",
+ "description":"Claude skill that recovers deleted or formatted-over camera video (MP4/MOV) from exFAT SD cards, read-only.",
  "applicationCategory":"UtilitiesApplication",
  "operatingSystem":"macOS, Linux",
  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
@@ -150,11 +150,11 @@
 <main>
   <article class="wrap article">
     <div class="article-meta">
-      <span>Free tool</span><span>Mac &amp; Linux</span><span>v1.0</span>
+      <span>Free Claude skill</span><span>Claude Code</span><span>Mac &amp; Linux</span>
     </div>
     <h1>Recover deleted camera clips from your SD card</h1>
 
-    <p class="lede">Deleted a clip? Formatted the card too soon? There's a good chance the footage is still there. This free tool finds it and gets it back, without writing a single byte to your card.</p>
+    <p class="lede">Deleted a clip? Formatted the card too soon? There's a good chance the footage is still there. Install this free Claude skill, plug in your card, and ask Claude to get it back. It never writes a single byte to your card.</p>
 
     <div class="stat-row">
       <div class="stat"><b>31:24</b><span>4K clip recovered</span></div>
@@ -162,7 +162,7 @@
       <div class="stat"><b>0</b><span>writes to your card, ever</span></div>
     </div>
 
-    <p>I made this after losing a 30-minute talking-head take. The card had been formatted <em>and</em> recorded on again, and the whole clip still came back: all 31 minutes, playing start to finish. Sony cameras store their files in an unusual layout, and this tool is built to handle it.</p>
+    <p>I made this after losing a 30-minute talking-head take. The card had been formatted <em>and</em> recorded on again, and the whole clip still came back: all 31 minutes, playing start to finish. Sony cameras store their files in an unusual layout, and this skill teaches Claude how to handle it.</p>
 
     <!-- ============ Download gate ============ -->
     <section class="gate" id="get">
@@ -192,8 +192,8 @@
       <div class="unlocked" aria-live="polite">
         <h2>You're in. Here's your download.</h2>
         <p>Thanks! Your download should start on its own. If it doesn't, use the button.</p>
-        <a class="btn btn-primary" id="dl-btn" href="downloads/sd-video-recovery-v1.0.zip" download>Download SD Video Recovery (.zip)</a>
-        <p class="file">sd-video-recovery-v1.0.zip &middot; 10 KB &middot; Python script + step-by-step README</p>
+        <a class="btn btn-primary" id="dl-btn" href="downloads/sd-video-recovery-skill.zip" download>Download the Claude skill (.zip)</a>
+        <p class="file">sd-video-recovery-skill.zip &middot; 11 KB &middot; Claude skill + one-page install guide</p>
       </div>
     </section>
 
@@ -207,21 +207,22 @@
       <li><strong>Tells you what's actually recoverable</strong> before you spend any time on it. It lists every lost clip with its recording date, length, size, and whether it's still intact.</li>
       <li><strong>Handles Sony's unusual file layout</strong> (FX3, FX30, A7 IV, A7S III, ZV-E1 and more), plus most other cameras that record MP4/MOV: Canon, Panasonic, Fujifilm, GoPro, DJI.</li>
       <li><strong>Is read-only by design.</strong> It can't damage your card, and it refuses to save onto the card it's reading.</li>
+      <li><strong>Checks its own work.</strong> Claude confirms the recovered clip plays all the way through and pulls a frame so you can see it's the right one.</li>
     </ul>
 
     <h2>How it works, in four steps</h2>
     <ol class="steps">
-      <li><strong>Unmount the card</strong> so your computer stops writing to it.</li>
-      <li><strong>Scan.</strong> One command searches the card's free space and lists every lost clip it finds.</li>
-      <li><strong>Pick yours</strong> by date and length. It shows <code>INTACT</code> or <code>DAMAGED</code> next to each one.</li>
-      <li><strong>Recover</strong> it to your computer or an external drive. Done.</li>
+      <li><strong>Install the skill.</strong> Unzip it and drop the folder into <code>~/.claude/skills</code>. It takes about a minute.</li>
+      <li><strong>Plug in your card and tell Claude what you lost</strong>, like <em>"I formatted my card and lost a 30-minute clip from last week."</em></li>
+      <li><strong>Claude scans the card</strong> and shows every lost clip with its date, length, and whether it's <code>INTACT</code> or <code>DAMAGED</code>.</li>
+      <li><strong>Pick yours.</strong> Claude recovers it to your computer or an external drive, then checks that it plays.</li>
     </ol>
-    <p>The download includes a plain-English README that walks through every command. If you've never opened Terminal before, you'll be fine.</p>
+    <p>You'll type your computer password once or twice when Claude asks, because reading a card directly needs it. Everything else, Claude handles.</p>
 
     <h2>What you need</h2>
     <ul>
+      <li><strong>Claude Code</strong>, in the Claude desktop app's Code tab or in Terminal. It needs to be Claude Code: regular Claude chat can't reach an SD card plugged into your computer.</li>
       <li>A Mac or Linux computer (Windows isn't supported yet)</li>
-      <li>Python 3, already on most Macs</li>
       <li>Free space on your computer or an external drive at least as big as the clip. Thirty minutes of 4K is about 25&nbsp;GB.</li>
       <li>An exFAT card. That's most cards over 32&nbsp;GB, which covers nearly every card used for video.</li>
     </ul>
