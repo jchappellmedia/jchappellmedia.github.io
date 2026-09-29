@@ -207,3 +207,45 @@ The content is portable — nothing is hard-wired to this URL except the
   GitHub, then tick *Enforce HTTPS* in the repo's Pages settings.
 
 Either way, find-and-replace `jchappellmedia.github.io` across the HTML files.
+
+---
+
+## Your email list (Supabase)
+
+`sd-recovery.html` asks for an email (with a consent checkbox) before the
+download. Signups go to your Supabase project **jchappellmedia-site**, table
+**`email_signups`**.
+
+**See or export your list:** supabase.com → project *jchappellmedia-site* →
+**Table Editor** → `email_signups` → **Export → CSV**. Import that CSV into
+whatever tool you send emails from (Kit, Mailchimp, Beehiiv…).
+
+Each row stores the email, the exact consent wording the person agreed to,
+which download they signed up from (`source`), and when.
+
+**When you email people:** include an unsubscribe link or honour "unsubscribe"
+replies, and remove those people from your list. That's a legal requirement
+(CAN-SPAM in the US, GDPR in the EU), not just good manners.
+
+**How it's locked down:** the page uses the *publishable* key, which is public
+by design. Database rules only allow a visitor to *add* a row, only with
+consent ticked, and only for known sources. Nobody can read, change or delete
+the list from the web — only you, from the Supabase dashboard.
+
+**Keep-alive:** free Supabase projects pause after about a week with no
+activity. `.github/workflows/keep-email-list-awake.yml` pings the project every
+3 days so the form never goes dark. If signups ever stop arriving, check the
+project isn't paused in the Supabase dashboard. The page still hands out the
+download if the list is unreachable, so visitors are never stuck.
+
+**Gating another free download:** copy `sd-recovery.html`, change `SOURCE` in
+its script and the file link, then allow the new source in Supabase (SQL
+editor):
+
+```sql
+alter policy "Visitors can sign up with consent" on public.email_signups
+  with check (consent = true and source in ('sd-video-recovery', 'your-new-source'));
+```
+
+The file itself is a normal public file in `downloads/`, so the email step is a
+friendly ask, not a lock. Anyone with the direct link can still download it.

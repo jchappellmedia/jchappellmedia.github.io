@@ -6,6 +6,18 @@
   },
   "items": [
     {
+      "id": "sd-video-recovery",
+      "title": "SD Card Video Recovery",
+      "blurb": "Get back camera clips you deleted or formatted off an SD card. A free, read-only tool built for Sony that works with most cameras.",
+      "type": "tool",
+      "price": "Free",
+      "url": "sd-recovery.html",
+      "featured": true,
+      "date": "2026-09-28",
+      "cta": "Get the tool",
+      "badge": "New"
+    },
+    {
       "id": "claude-skills-starter",
       "title": "Claude Skills Starter Pack",
       "blurb": "Five production-ready Claude skills you can drop into any project today, plus the file structure and frontmatter that makes them fire reliably.",
@@ -20,7 +32,7 @@
     {
       "id": "knowledge-base-blueprint",
       "title": "The Knowledge Base Blueprint",
-      "blurb": "How to structure a knowledge base an AI can actually navigate \u2014 chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.",
+      "blurb": "How to structure a knowledge base an AI can actually navigate — chunking, naming, cross-linking, and the retrieval mistakes that quietly wreck accuracy.",
       "type": "knowledge-base",
       "price": "Free",
       "url": "guides/knowledge-base-blueprint.html",
@@ -31,7 +43,7 @@
     {
       "id": "ai-business-plan-kit",
       "title": "AI Business Plan Kit",
-      "blurb": "The full template I use to take a business idea from one sentence to a funded plan \u2014 market sizing, unit economics, and the AI prompts that pressure-test every assumption.",
+      "blurb": "The full template I use to take a business idea from one sentence to a funded plan — market sizing, unit economics, and the AI prompts that pressure-test every assumption.",
       "type": "business-plan",
       "price": "$49",
       "url": "#",
