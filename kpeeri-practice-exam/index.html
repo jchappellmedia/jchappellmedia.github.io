@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KPEERI Practice Exam</title>
+  <meta name="description" content="A free, full-length KPEERI practice exam: 110 original questions written to the IDA content outline, a two-hour timer, and a score report by domain.">
+  <meta property="og:title" content="KPEERI Practice Exam">
+  <meta property="og:description" content="110 original questions written to the IDA KPEERI content outline, a two-hour timer, explanations for every answer, and a score report by domain.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#16203A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="home">
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <button class="brand" type="button" data-action="home" aria-label="KPEERI Practice home">
+        <span class="brand-tile" aria-hidden="true">k</span>
+        <span>KPEERI Practice</span>
+      </button>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#outline" data-home-link>What it covers</a>
+        <a href="#about" data-home-link>How to use it</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HOME ============ -->
+    <section id="view-home" class="view">
+      <div class="hero">
+        <div class="wrap">
+          <div class="hero-copy">
+            <h1>A full-length practice exam for the KPEERI</h1>
+            <p class="lede">110 original questions written to IDA’s published content outline, a two-hour clock like the real test, and a score report that tells you which standards to study next.</p>
+
+            <ul class="hero-facts">
+              <li><strong id="fact-count">110</strong> questions</li>
+              <li><strong>2 hours</strong> on the clock</li>
+              <li><strong>Every answer</strong> explained</li>
+            </ul>
+
+            <div id="resume" class="resume" hidden>
+              <p id="resume-text"></p>
+              <div class="actions">
+                <button class="btn primary" type="button" data-action="resume">Resume exam</button>
+                <button class="link-btn danger" type="button" data-action="discard">Discard it</button>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn primary" type="button" id="btn-start" data-action="start">Start the timed exam</button>
+              <button class="btn" type="button" data-action="study-setup">Study by topic</button>
+              <button class="link-btn" type="button" id="btn-last" data-action="last" hidden>See your last score report</button>
+            </div>
+          </div>
+
+          <figure class="word-map" aria-label="The word thought, mapped: seven letters spell three graphemes, th, ough, and t, and three phonemes.">
+            <div class="tiles" aria-hidden="true">
+              <div class="unit"><div class="unit-letters"><span class="tile">t</span><span class="tile">h</span></div><span class="dot"></span></div>
+              <div class="unit"><div class="unit-letters"><span class="tile">o</span><span class="tile">u</span><span class="tile">g</span><span class="tile">h</span></div><span class="dot"></span></div>
+              <div class="unit"><div class="unit-letters"><span class="tile">t</span></div><span class="dot"></span></div>
+            </div>
+            <figcaption>In <em>thought</em>, seven letters spell just three phonemes.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <section class="section" id="history-section" hidden aria-labelledby="history-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="history-title">Your past exams</h2>
+            <p>Saved in this browser only.</p>
+          </div>
+          <div class="table-wrap measure">
+            <table class="history-table">
+              <thead><tr><th scope="col">Date</th><th scope="col" class="num">Score</th><th scope="col" class="num">Percent</th><th scope="col" class="num">Time used</th></tr></thead>
+              <tbody id="history-body"></tbody>
+            </table>
+          </div>
+          <p><button class="link-btn danger" type="button" data-action="clear-history">Clear history and missed questions</button></p>
+        </div>
+      </section>
+
+      <section class="section" id="outline" aria-labelledby="outline-title">
+        <div class="wrap">
+          <div class="section-head measure">
+            <h2 id="outline-title">What the exam covers</h2>
+            <p>The real KPEERI has 110 multiple-choice questions: 100 scored and 10 unscored pretest questions mixed in. On this practice exam all 110 count, spread across the same domains in the same proportions.</p>
+          </div>
+          <div class="outline-grid">
+            <div class="table-wrap">
+              <table class="outline-table">
+                <thead><tr><th scope="col">Domain</th><th scope="col" class="num">Real exam (scored)</th><th scope="col" class="num">This exam</th></tr></thead>
+                <tbody id="outline-body"></tbody>
+                <tfoot><tr><th scope="row">Total</th><td class="num">100</td><td class="num" id="outline-total">110</td></tr></tfoot>
+              </table>
+            </div>
+            <div>
+              <h3>Three kinds of questions</h3>
+              <div class="levels-bar" role="img" aria-label="Recall 34 percent, application 48 percent, analysis 18 percent">
+                <span class="lv-recall" style="flex: 34">34%</span>
+                <span class="lv-application" style="flex: 48">48%</span>
+                <span class="lv-analysis" style="flex: 18">18%</span>
+              </div>
+              <ul class="level-list" id="level-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="section-head measure">
+            <h2 id="about-title">How to use it</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <h3>Take it like the real thing</h3>
+              <p>The timed exam mixes all domains in random order. You can flag questions, jump around with the question list, and change answers until you submit. Shortcuts: <kbd>A</kbd>–<kbd>D</kbd> to answer, <kbd>N</kbd> and <kbd>P</kbd> to move, <kbd>F</kbd> to flag.</p>
+            </div>
+            <div>
+              <h3>Then study what you missed</h3>
+              <p>Your score report breaks results down by domain and question type. Study mode lets you drill one topic at a time, or only the questions you got wrong, with the explanation right after each answer.</p>
+            </div>
+            <div>
+              <h3>Your progress stays with you</h3>
+              <p>An exam in progress is saved in this browser, and the clock pauses when you leave the tab, so you can finish later. Nothing is sent anywhere.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="wrap">
+          <p>This is an independent study resource. It is not affiliated with, endorsed by, or reviewed by the International Dyslexia Association (IDA) or Meazure Learning. Every question is original and none comes from the actual exam. The structure follows IDA’s public <a href="https://dyslexiaida.org/about-kpeeri/" rel="noopener">About KPEERI</a> page and the KPEERI Handbook (2026).</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ============ EXAM ============ -->
+    <section id="view-exam" class="view" hidden aria-label="Timed exam">
+      <div class="exam-bar">
+        <div class="wrap">
+          <p class="exam-count" style="margin:0"><strong>Question <span id="ex-num">1</span></strong> of <span id="ex-total">110</span></p>
+          <div class="timer" id="ex-timer" role="timer" aria-label="Time remaining">2:00:00</div>
+          <div class="exam-tools">
+            <button class="btn small quiet" type="button" id="ex-flag" aria-pressed="false">Flag</button>
+            <button class="btn small quiet" type="button" data-action="open-nav">Question list</button>
+            <button class="btn small quiet" type="button" data-action="pause">Pause</button>
+          </div>
+        </div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="ex-progress"></div></div>
+      </div>
+      <div class="q-shell" id="ex-q" aria-live="polite"></div>
+      <nav class="exam-nav" aria-label="Question navigation">
+        <button class="btn" type="button" id="ex-prev">Previous</button>
+        <button class="btn primary" type="button" id="ex-next">Next</button>
+      </nav>
+      <div class="exam-foot">
+        <span id="ex-answered">0 answered</span>
+        <button class="link-btn" type="button" data-action="finish">Review and submit</button>
+      </div>
+      <p class="sr-only" id="ex-announce" aria-live="assertive"></p>
+    </section>
+
+    <!-- ============ STUDY SETUP ============ -->
+    <section id="view-study-setup" class="view" hidden aria-labelledby="setup-title">
+      <div class="setup">
+        <div class="wrap">
+          <div class="section-head measure">
+            <h1 id="setup-title">Study by topic</h1>
+            <p>Untimed. You’ll see whether you were right, and why, after each question.</p>
+          </div>
+          <form id="study-form" novalidate>
+            <fieldset>
+              <legend>Topics</legend>
+              <div id="study-topics"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Which questions</legend>
+              <label class="check"><input type="radio" name="src" value="all" checked> <span>Every question in the topics I picked</span></label>
+              <label class="check"><input type="radio" name="src" value="missed" id="src-missed"> <span id="src-missed-label">Only questions I’ve missed</span></label>
+              <div class="inline-field" style="margin-top:0.75rem">
+                <label for="study-count">How many</label>
+                <select id="study-count" name="count">
+                  <option value="all">All of them</option>
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+            </fieldset>
+            <p id="study-summary" class="note" aria-live="polite"></p>
+            <div class="actions">
+              <button class="btn primary" type="submit" id="study-go">Start studying</button>
+              <button class="btn quiet" type="button" data-action="home">Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STUDY ============ -->
+    <section id="view-study" class="view" hidden aria-label="Study session">
+      <div class="exam-bar study-bar">
+        <div class="wrap">
+          <p class="exam-count" style="margin:0"><strong id="st-progress">Question 1 of 10</strong></p>
+          <p class="exam-count" style="margin:0" id="st-score">0 correct so far</p>
+          <div class="exam-tools">
+            <button class="btn small quiet" type="button" data-action="end-study">End session</button>
+          </div>
+        </div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="st-bar"></div></div>
+      </div>
+      <div class="q-shell" id="st-q"></div>
+      <nav class="exam-nav" aria-label="Study controls">
+        <span></span>
+        <button class="btn primary" type="button" id="st-action" disabled>Check answer</button>
+      </nav>
+    </section>
+
+    <!-- ============ RESULTS ============ -->
+    <section id="view-results" class="view" hidden aria-labelledby="res-title">
+      <div class="wrap">
+        <div class="results-head">
+          <h1 id="res-title">Your results</h1>
+          <ul class="score-line" id="res-line"></ul>
+          <div id="res-notes"></div>
+          <div class="actions" style="margin-top:1.25rem">
+            <button class="btn primary" type="button" data-action="start">Take the exam again</button>
+            <button class="btn" type="button" data-action="study-missed" id="res-study-missed">Study the ones I missed</button>
+            <button class="btn quiet" type="button" data-action="home">Home</button>
+          </div>
+        </div>
+
+        <div class="results-grid">
+          <div>
+            <h2>By domain</h2>
+            <div class="table-wrap">
+              <table class="bd-table">
+                <thead><tr><th scope="col">Area</th><th scope="col" class="num">Correct</th><th scope="col" class="bar-cell"><span class="sr-only">Score bar</span></th></tr></thead>
+                <tbody id="res-domains"></tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <div class="study-next" id="res-next" hidden>
+              <h2 style="font-size:1.3rem">Study these first</h2>
+              <ol id="res-next-list"></ol>
+              <button class="btn small" type="button" data-action="study-weak">Study these areas</button>
+            </div>
+            <h2 style="margin-top:2rem">By question type</h2>
+            <div class="table-wrap">
+              <table class="bd-table">
+                <thead><tr><th scope="col">Type</th><th scope="col" class="num">Correct</th><th scope="col" class="bar-cell"><span class="sr-only">Score bar</span></th></tr></thead>
+                <tbody id="res-levels"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <section class="review" aria-labelledby="review-title">
+          <h2 id="review-title">Review every question</h2>
+          <div class="filter" role="group" aria-label="Show">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="incorrect" aria-pressed="false">Missed</button>
+            <button type="button" data-filter="flagged" aria-pressed="false">Flagged</button>
+            <button type="button" data-filter="correct" aria-pressed="false">Correct</button>
+          </div>
+          <div class="rv-list" id="res-review"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ DIALOGS ============ -->
+  <dialog id="dlg-nav" aria-labelledby="nav-title">
+    <div class="nav-head">
+      <h2 id="nav-title">Question list</h2>
+      <form method="dialog"><button class="btn small quiet" value="close">Close</button></form>
+    </div>
+    <ul class="nav-legend">
+      <li><i class="lg-answered"></i><span id="lg-answered">0</span> answered</li>
+      <li><i class="lg-flagged"></i><span id="lg-flagged">0</span> flagged</li>
+      <li><i></i><span id="lg-open">110</span> not answered</li>
+    </ul>
+    <div class="nav-grid" id="nav-grid"></div>
+  </dialog>
+
+  <dialog id="dlg-submit" aria-labelledby="submit-title">
+    <form method="dialog">
+      <h2 id="submit-title">Submit your exam?</h2>
+      <p id="submit-body"></p>
+      <div class="actions">
+        <button class="btn quiet" value="list" type="submit">Open question list</button>
+        <button class="btn quiet" value="cancel" type="submit">Keep working</button>
+        <button class="btn primary" value="submit" type="submit">Submit exam</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-pause" aria-labelledby="pause-title">
+    <form method="dialog" class="pause-body">
+      <h2 id="pause-title">Exam paused</h2>
+      <p>The clock is stopped at <strong id="pause-time">2:00:00</strong>. Your answers are saved.</p>
+      <div class="actions" style="justify-content:center">
+        <button class="btn quiet" value="exit" type="submit">Save and exit</button>
+        <button class="btn primary" value="resume" type="submit">Resume</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-confirm" aria-labelledby="cf-title">
+    <form method="dialog">
+      <h2 id="cf-title"></h2>
+      <p id="cf-body"></p>
+      <div class="actions">
+        <button class="btn quiet" value="cancel" type="submit" id="cf-cancel">Cancel</button>
+        <button class="btn primary" value="ok" type="submit" id="cf-ok">OK</button>
+      </div>
+    </form>
+  </dialog>
+
+  <noscript><p class="wrap">This practice exam needs JavaScript turned on.</p></noscript>
+  <script src="data/questions.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2328 @@
+[
+ {
+  "id": "1A-01",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Language processing domains: four-part processor",
+  "stem": "In the four-part processing model of word recognition (Seidenberg & McClelland; Adams), which processor receives and stores information about the letters and letter sequences in printed words?",
+  "options": [
+   "Phonological processor",
+   "Orthographic processor",
+   "Meaning processor",
+   "Context processor"
+  ],
+  "answer": 1,
+  "explanation": "The orthographic processor handles visual input from print: letters, letter patterns, and spellings. The phonological processor handles speech sounds, and skilled word reading depends on rapid connections between the two. The meaning and context processors support word meaning and sentence- and discourse-level interpretation."
+ },
+ {
+  "id": "1A-02",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Interrelationships among literacy components: Simple View of Reading",
+  "stem": "According to the Simple View of Reading (Gough & Tunmer, 1986), reading comprehension is the product of which two components?",
+  "options": [
+   "Fluency and vocabulary knowledge",
+   "Phonemic awareness and phonics",
+   "Background knowledge and strategy use",
+   "Decoding and language comprehension"
+  ],
+  "answer": 3,
+  "explanation": "The Simple View expresses reading comprehension as Decoding × Language Comprehension (RC = D × LC). Because it is a product, a weakness in either component limits comprehension; a student who cannot decode cannot understand the text no matter how strong their oral language is. The other choices name important skills, but each falls within one of the two components rather than defining the model."
+ },
+ {
+  "id": "1A-03",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Interrelationships among literacy components: Scarborough's Reading Rope",
+  "stem": "In Scarborough's Reading Rope, which of the following is one of the word-recognition (lower) strands?",
+  "options": [
+   "Sight recognition",
+   "Verbal reasoning",
+   "Language structures",
+   "Literacy knowledge"
+  ],
+  "answer": 0,
+  "explanation": "The word-recognition strands are phonological awareness, decoding, and sight recognition, which become increasingly automatic. Verbal reasoning, language structures, and literacy knowledge are language-comprehension strands (along with background knowledge and vocabulary), which become increasingly strategic. Skilled reading is the weaving together of both sets of strands."
+ },
+ {
+  "id": "1A-04",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Typical development: Ehri's phases of word reading",
+  "stem": "In Ehri's phases of word-reading development, the phase in which children connect all of the letters in a word's spelling to its phonemes, allowing them to decode unfamiliar words and retain sight words more reliably, is the:",
+  "options": [
+   "pre-alphabetic phase",
+   "partial alphabetic phase",
+   "full alphabetic phase",
+   "consolidated alphabetic phase"
+  ],
+  "answer": 2,
+  "explanation": "In the full alphabetic phase, readers make complete grapheme–phoneme connections, which supports both decoding and orthographic mapping. Partial alphabetic readers use only some letters (often the first and last). Consolidated alphabetic readers go further, processing larger chunks such as rimes, syllables, and morphemes as units."
+ },
+ {
+  "id": "1A-05",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Interrelationships among literacy components: orthographic mapping",
+  "stem": "<em>Orthographic mapping</em> is best described as the process of:",
+  "options": [
+   "memorizing the visual outline or overall shape of whole words",
+   "linking a word's phonemes to its letters to store it in memory",
+   "using sentence context to predict an unfamiliar word",
+   "connecting printed words directly to pictures that show their meanings"
+  ],
+  "answer": 1,
+  "explanation": "Orthographic mapping (Ehri) is the mental process of bonding a word's spelling to its pronunciation and meaning by linking graphemes to phonemes, so the word can later be retrieved instantly as a sight word. It depends on phonemic awareness and letter–sound knowledge, not on visual memory for word shape; research does not support word shape as the basis of sight-word learning."
+ },
+ {
+  "id": "1A-06",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Typical development: phonological awareness continuum",
+  "stem": "Which phonological awareness task is typically the most advanced in the developmental progression?",
+  "options": [
+   "Identifying which words in a set rhyme",
+   "Blending spoken syllables into a word",
+   "Separating the onset from the rime in a word",
+   "Deleting a phoneme from a consonant blend"
+  ],
+  "answer": 3,
+  "explanation": "Phonological awareness generally progresses from larger units (words, syllables, onset–rime) to individual phonemes, and from identification and blending to segmentation and manipulation. Deleting a sound from within a blend (e.g., <em>slip</em> without /l/ → <em>sip</em>) requires the finest-grained phonemic analysis and is among the last skills to develop. Rhyme and syllable tasks develop early."
+ },
+ {
+  "id": "1A-07",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "recall",
+  "topic": "Cognition and behavior: double-deficit hypothesis",
+  "stem": "According to the double-deficit hypothesis (Wolf & Bowers), students with the most severe reading difficulties tend to have weaknesses in both:",
+  "options": [
+   "phonological awareness and rapid automatized naming",
+   "vocabulary knowledge and listening comprehension",
+   "visual perception and visual sequential memory",
+   "handwriting fluency and spelling accuracy"
+  ],
+  "answer": 0,
+  "explanation": "The double-deficit hypothesis proposes that phonological deficits and naming-speed (RAN) deficits are separable sources of reading difficulty, and that students with both tend to have the most severe and persistent problems, especially with fluency. Visual-perceptual explanations of dyslexia are not supported by research, and vocabulary and listening weaknesses relate to language comprehension rather than to this hypothesis."
+ },
+ {
+  "id": "1A-08",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "application",
+  "topic": "Interrelationships among literacy components: change with development",
+  "stem": "A fifth-grade teacher finds that nearly all of her students now read grade-level words accurately and fluently, yet their reading comprehension scores vary widely. Based on research about how the relationships among reading components change with development, which factor most likely accounts for most of these differences?",
+  "options": [
+   "Phonemic awareness",
+   "Letter–sound knowledge",
+   "Language comprehension",
+   "Visual memory for words"
+  ],
+  "answer": 2,
+  "explanation": "In the early grades, word recognition accounts for most of the variation in reading comprehension. Once decoding is accurate and automatic, language comprehension (vocabulary, background knowledge, syntax, and verbal reasoning) explains a growing share of the differences among readers. Phonemic awareness and letter–sound knowledge underpin decoding, which is no longer the main source of variation for these students."
+ },
+ {
+  "id": "1A-09",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "application",
+  "topic": "Environmental, cultural, and social factors: English learners",
+  "stem": "Lucía is a kindergartner whose home language is Spanish. She speaks Spanish fluently, is beginning to learn English, and can already blend and segment syllables and sounds in Spanish words. Which statement best reflects research on her English literacy development?",
+  "options": [
+   "Her Spanish phonological awareness is likely to transfer and support English reading.",
+   "Her family should switch to English at home so her English literacy develops faster.",
+   "Formal English reading instruction should wait until she is proficient in oral English.",
+   "Her Spanish sound knowledge will generally interfere with learning to decode English."
+  ],
+  "answer": 0,
+  "explanation": "Phonological awareness and decoding skills transfer across alphabetic languages, so strong Spanish phonological skills are an asset for learning to read English (National Literacy Panel on Language-Minority Children and Youth). English learners can and should receive foundational reading instruction while their oral English develops, with explicit attention to the sounds and spellings that differ between the two languages. Abandoning the home language is not recommended and can weaken overall language development."
+ },
+ {
+  "id": "1A-10",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "application",
+  "topic": "Cognition and behavior: graphomotor control",
+  "stem": "A second grader reads grade-level words accurately and has strong oral language. However, his written work is extremely slow, his letters are inconsistently formed and sized, and he complains that his hand hurts when copying. Which area of cognition and behavior is most likely affecting his written output?",
+  "options": [
+   "Phonological processing",
+   "Graphomotor control",
+   "Semantic processing",
+   "Auditory attention"
+  ],
+  "answer": 1,
+  "explanation": "Graphomotor control is the coordination of the fine-motor movements needed to form letters. Slow, effortful, poorly formed handwriting with hand fatigue, despite intact decoding and oral language, points to a graphomotor weakness, which can coexist with but is distinct from phonological or language difficulties. A phonological processing weakness would more typically show up as decoding and spelling errors."
+ },
+ {
+  "id": "1A-11",
+  "domain": 1,
+  "subdomain": "1A",
+  "level": "analysis",
+  "topic": "Typical development: spelling stages and instructional needs",
+  "stem": "A first grader completes the dictated spelling task below in October. Based on this sample, which instructional focus is most appropriate next?",
+  "sample": "Dictated word    Student's spelling\nfan              FAN\npet              PAT\ndig              DEG\nrug              ROG\nhop              HOP\nship             SEP\nchin             HEN\ndrum             JRUM\nbump             BUP",
+  "options": [
+   "Long vowel teams and vowel–consonant–e patterns",
+   "Beginning and ending consonant sounds in CVC words",
+   "Short vowels, digraphs, and blends in closed syllables",
+   "Inflectional endings and the doubling generalization"
+  ],
+  "answer": 2,
+  "explanation": "The student consistently represents beginning and ending consonants, so that skill is already secure. The errors show typical letter name–alphabetic patterns: short-vowel substitutions (PAT, DEG, ROG), digraph confusions (SEP, HEN), /dr/ spelled JR, and an omitted preconsonantal nasal (BUP). The next step is explicit work on short vowels, digraphs, and blends in closed syllables; long-vowel patterns and inflectional endings come later in the developmental sequence."
+ },
+ {
+  "id": "1B-01",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Phonology: phonological vs. phonemic awareness",
+  "stem": "Which task requires <em>phonemic</em> awareness, rather than only broader phonological awareness?",
+  "options": [
+   "Clapping the syllables in <em>butterfly</em>",
+   "Producing a word that rhymes with <em>cat</em>",
+   "Counting the words in a spoken sentence",
+   "Isolating the first sound in <em>map</em>"
+  ],
+  "answer": 3,
+  "explanation": "Phonological awareness is the umbrella term for awareness of all the sound units in speech: words, syllables, onsets and rimes, and phonemes. Phonemic awareness is the subset concerned with individual phonemes, so isolating /m/ in <em>map</em> is a phonemic task. Syllable clapping, rhyming, and counting words all involve larger units."
+ },
+ {
+  "id": "1B-02",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Phonology: articulatory features of consonants",
+  "stem": "The consonant phonemes /f/ and /v/ differ only in:",
+  "options": [
+   "place of articulation",
+   "manner of articulation",
+   "voicing",
+   "nasality"
+  ],
+  "answer": 2,
+  "explanation": "/f/ and /v/ are both labiodental fricatives, made with the top teeth on the lower lip and a continuous stream of air. The only difference is that /v/ is voiced (the vocal cords vibrate) and /f/ is voiceless. Knowing voiced–voiceless pairs helps teachers interpret spelling confusions such as v written for /f/."
+ },
+ {
+  "id": "1B-03",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Phonology: articulatory features of vowels",
+  "stem": "A first grader spells <em>pig</em> as PEG and <em>fish</em> as FESH. Which explanation best accounts for these spellings?",
+  "options": [
+   "The vowel /ĭ/ is articulated close to /ē/, the sound of the letter name e.",
+   "The student has not yet learned that every syllable must contain a vowel.",
+   "The student is overgeneralizing the vowel–consonant–e spelling pattern.",
+   "The student is confusing the printed letters e and i because they look alike."
+  ],
+  "answer": 0,
+  "explanation": "/ĭ/ and /ē/ are neighboring high front vowels, so a child using a letter-name strategy may choose e, whose name (/ē/) feels closest in the mouth to /ĭ/. This is a common, developmentally expected substitution rather than a visual confusion. The spellings contain vowels and no final e, so the other explanations don't fit the evidence."
+ },
+ {
+  "id": "1B-04",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Orthography: mapping phonemes to graphemes",
+  "stem": "The word <em>badge</em> has five letters. How many graphemes does it have?",
+  "options": [
+   "Two",
+   "Three",
+   "Four",
+   "Five"
+  ],
+  "answer": 1,
+  "explanation": "<em>Badge</em> has three phonemes, /b/ /ă/ /j/, and each is represented by one grapheme: b, a, and the trigraph dge. A grapheme is the letter or letter group that spells a single phoneme, so a count of five confuses letters with graphemes."
+ },
+ {
+  "id": "1B-05",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Phonology: phoneme segmentation and counting",
+  "stem": "A teacher is choosing words for a phoneme-segmentation activity. Which word has the same number of phonemes as <em>box</em>?",
+  "options": [
+   "shop",
+   "thing",
+   "knight",
+   "fix"
+  ],
+  "answer": 3,
+  "explanation": "<em>Box</em> has four phonemes, /b/ /ŏ/ /k/ /s/, because the letter x represents two sounds, /k/ and /s/. <em>Fix</em> also has four: /f/ /ĭ/ /k/ /s/. <em>Shop</em> (/sh/ /ŏ/ /p/), <em>thing</em> (/th/ /ĭ/ /ng/), and <em>knight</em> (/n/ /ī/ /t/) each have three, because digraphs, trigraphs, and silent letters do not add phonemes."
+ },
+ {
+  "id": "1B-06",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Orthography: phonetically irregular (heart) words",
+  "stem": "Using a “heart word” approach to teach the high-frequency word <em>said</em>, the teacher should first:",
+  "options": [
+   "have students study the overall shape and length of the word",
+   "teach students to look at the first letter and use context clues",
+   "map /s/ /ĕ/ /d/ to letters and flag ai as the part to learn by heart",
+   "have students spell the word aloud repeatedly using letter names"
+  ],
+  "answer": 2,
+  "explanation": "In a heart-word approach, students segment the spoken word, map each phoneme to its spelling, and identify only the irregular part (here, ai representing /ĕ/) as the part to remember “by heart.” The regular s and d are decoded normally. This uses orthographic mapping rather than rote visual memorization or guessing from context."
+ },
+ {
+  "id": "1B-07",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Orthography: common spelling patterns (ck)",
+  "stem": "In a one-syllable word, which spelling is typically used for /k/ at the end of the word immediately after a single short vowel?",
+  "options": [
+   "ck",
+   "k",
+   "c",
+   "ke"
+  ],
+  "answer": 0,
+  "explanation": "After a single short vowel at the end of a one-syllable word, /k/ is usually spelled ck (<em>back</em>, <em>sick</em>, <em>duck</em>). The single letter k follows a consonant or a vowel team (<em>milk</em>, <em>book</em>), and ke appears in vowel–consonant–e words with long vowels (<em>bike</em>). A final single c is rare in one-syllable words."
+ },
+ {
+  "id": "1B-08",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Orthography: spelling generalizations (doubling)",
+  "stem": "A student writes, “We were <u>hoping</u> on one foot,” intending the word <em>hopping</em>. Which spelling generalization should the teacher reteach?",
+  "options": [
+   "The drop-e (silent e) rule",
+   "The change-y-to-i rule",
+   "The FLOSS rule",
+   "The doubling (1-1-1) rule"
+  ],
+  "answer": 3,
+  "explanation": "When a one-syllable word ends in one vowel followed by one consonant (<em>hop</em>), the final consonant is doubled before a vowel suffix: <em>hop</em> + <em>ing</em> = <em>hopping</em>. Without doubling, the word reads as <em>hoping</em>, from <em>hope</em>, where the drop-e rule applies. Contrasting <em>hop/hopping</em> with <em>hope/hoping</em> shows students how doubling keeps the vowel short."
+ },
+ {
+  "id": "1B-09",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Orthography: syllable types",
+  "stem": "Which word consists of an open syllable followed by a closed syllable?",
+  "options": [
+   "rabbit",
+   "robot",
+   "baby",
+   "pancake"
+  ],
+  "answer": 1,
+  "explanation": "<em>Robot</em> divides as ro/bot: ro ends in a vowel, making it an open syllable with a long vowel, and bot ends in a consonant, making it a closed syllable. <em>Rabbit</em> (rab/bit) has two closed syllables, <em>baby</em> (ba/by) has two open syllables, and <em>pancake</em> (pan/cake) is a closed syllable followed by a vowel–consonant–e syllable."
+ },
+ {
+  "id": "1B-10",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Orthography: syllable division patterns (VCV)",
+  "stem": "While reading a passage about desert animals, a student decodes <em>camel</em> as /kā/ /mĕl/ and then says, “That's not a word.” Which teacher prompt is most effective?",
+  "options": [
+   "Look at the picture and think about which animal makes sense.",
+   "Cover the second syllable and sound out the first letter again.",
+   "Try dividing after the m so the first syllable is closed and short.",
+   "Skip the word for now and keep reading to the end of the sentence."
+  ],
+  "answer": 2,
+  "explanation": "In a VCV word, students usually try V/CV first, which makes the first syllable open with a long vowel (/kā/). When that doesn't produce a real word, the next step is VC/V, dividing after the consonant, which makes the first syllable closed with a short vowel (cam/el). This prompt builds flexible syllable-division strategies instead of reliance on pictures or guessing."
+ },
+ {
+  "id": "1B-11",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Phonology: schwa",
+  "stem": "The term <em>schwa</em> refers to:",
+  "options": [
+   "the reduced vowel sound in an unstressed syllable",
+   "the vowel sound changed by an r that follows it",
+   "the long vowel sound heard at the end of an open syllable",
+   "the silent final e in a vowel–consonant–e syllable"
+  ],
+  "answer": 0,
+  "explanation": "Schwa (/ə/) is the reduced vowel sound heard in many unaccented syllables, such as the first syllable of <em>about</em> or the second syllable of <em>lemon</em>. Any vowel letter can represent schwa, which is why unstressed syllables are a common source of spelling errors. R-controlled vowels and long vowels in open syllables are different phenomena."
+ },
+ {
+  "id": "1B-12",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Orthography: word origins",
+  "stem": "Words such as <em>phonograph</em>, <em>chorus</em>, and <em>gym</em>, which use ph for /f/, ch for /k/, and y for /ĭ/, most often come from which language layer of English?",
+  "options": [
+   "Anglo-Saxon",
+   "Latin",
+   "French",
+   "Greek"
+  ],
+  "answer": 3,
+  "explanation": "The spellings ph for /f/, ch for /k/, and y for /ĭ/ are hallmarks of Greek-derived words, which are common in science and math vocabulary and are often built from combining forms (<em>phono</em> + <em>graph</em>). Anglo-Saxon words tend to be short, common everyday words, and Latin-derived words typically follow a prefix–root–suffix structure."
+ },
+ {
+  "id": "1B-13",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Morphology: inflectional vs. derivational morphemes",
+  "stem": "Which suffix is inflectional rather than derivational?",
+  "options": [
+   "-ness",
+   "-est",
+   "-ful",
+   "-ment"
+  ],
+  "answer": 1,
+  "explanation": "Inflectional suffixes add grammatical information (tense, number, possession, or comparison) without changing a word's part of speech or core meaning; English has only a handful (-s/-es, -ed, -ing, -en, -'s, and comparative -er and superlative -est). The superlative -est (<em>tall</em> → <em>tallest</em>) is inflectional. Derivational suffixes such as -ness, -ful, and -ment create new words and often change the part of speech (<em>kind</em> → <em>kindness</em>)."
+ },
+ {
+  "id": "1B-14",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Morphology: assimilated (chameleon) prefixes",
+  "stem": "The prefixes in <em>illegal</em>, <em>immature</em>, and <em>irregular</em> are all forms of the prefix <em>in-</em>, meaning “not.” This is an example of a(n):",
+  "options": [
+   "assimilated (chameleon) prefix",
+   "Greek combining form used as a prefix",
+   "inflectional morpheme",
+   "bound Latin root"
+  ],
+  "answer": 0,
+  "explanation": "An assimilated, or “chameleon,” prefix changes its final consonant to match or blend more easily with the first sound of the root: <em>in-</em> becomes il- before l, ir- before r, and im- before m, b, or p. This explains the doubled consonants in words like <em>illegal</em> and <em>irregular</em>, which students often misspell. Combining forms are Greek elements like <em>bio</em> or <em>graph</em>, and inflectional morphemes are suffixes."
+ },
+ {
+  "id": "1B-15",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Morphology: using morphemes to define words",
+  "stem": "A middle-school student encounters the unfamiliar word <em>hydrophobia</em>. Using knowledge of Greek combining forms, which meaning should the student infer?",
+  "options": [
+   "the study of water",
+   "a love of water",
+   "a fear of water",
+   "a fear of heights"
+  ],
+  "answer": 2,
+  "explanation": "<em>Hydro</em> means “water” (as in <em>dehydrate</em>) and <em>phobia</em> means “fear” (as in <em>arachnophobia</em>), so <em>hydrophobia</em> literally means “fear of water.” “The study of water” would require -<em>logy</em> (<em>hydrology</em>), “love of” would require -<em>phile</em>, and “fear of heights” is <em>acrophobia</em>. Teaching high-utility combining forms gives students a strategy for unlocking many academic words."
+ },
+ {
+  "id": "1B-16",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Semantics: word relationships and shades of meaning",
+  "stem": "During a vocabulary lesson, students arrange the words <em>cool</em>, <em>chilly</em>, <em>cold</em>, and <em>frigid</em> along a line from least to most intense. This semantic gradient activity primarily develops students' understanding of:",
+  "options": [
+   "Latin roots that share a common meaning",
+   "syntactic rules for placing adjectives",
+   "phonological patterns in related words",
+   "shades of meaning among related words"
+  ],
+  "answer": 3,
+  "explanation": "A semantic gradient arranges related words along a continuum, helping students notice fine distinctions in meaning and intensity and build richer semantic networks. This deepens word knowledge and supports precise word choice in writing. The words in this activity are not related by a shared root, sound pattern, or syntactic position."
+ },
+ {
+  "id": "1B-17",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Syntax: sentence types",
+  "stem": "Which of the following is a complex sentence?",
+  "options": [
+   "The bell rang, and the students lined up at the door.",
+   "When the bell rang, the students lined up at the door.",
+   "The bell and the whistle signaled the end of recess.",
+   "The ringing bell sent the students to the door."
+  ],
+  "answer": 1,
+  "explanation": "A complex sentence contains one independent clause and at least one dependent clause. “When the bell rang” is a dependent (subordinate) clause introduced by the subordinating conjunction <em>when</em>, attached to the independent clause “the students lined up at the door.” The first option is compound (two independent clauses joined by <em>and</em>), and the last two are simple sentences."
+ },
+ {
+  "id": "1B-18",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "recall",
+  "topic": "Discourse organization: text structure signal words",
+  "stem": "Signal words such as <em>as a result</em>, <em>therefore</em>, and <em>consequently</em> most often indicate which informational text structure?",
+  "options": [
+   "Cause and effect",
+   "Compare and contrast",
+   "Sequence or chronology",
+   "Description"
+  ],
+  "answer": 0,
+  "explanation": "These transition words signal that one event or condition leads to another, which is the defining feature of a cause-and-effect structure. Compare–contrast is signaled by words like <em>however</em>, <em>similarly</em>, and <em>on the other hand</em>, and sequence by <em>first</em>, <em>next</em>, and <em>finally</em>. Teaching signal words helps students build a mental model of how a text is organized."
+ },
+ {
+  "id": "1B-19",
+  "domain": 1,
+  "subdomain": "1B",
+  "level": "application",
+  "topic": "Handwriting: letter formation",
+  "stem": "A kindergarten teacher wants to prevent the common confusion between lowercase b and d in students' handwriting. Which practice is most consistent with structured literacy handwriting instruction?",
+  "options": [
+   "Introduce b and d in the same lesson so students can compare them directly.",
+   "Let each student choose the starting point and stroke direction that feel natural.",
+   "Have students copy each letter from a model several times without verbal cues.",
+   "Teach them on different days, starting d with the c stroke and b with a tall line."
+  ],
+  "answer": 3,
+  "explanation": "Easily confused letters are best taught separately, each with a consistent, verbally described formation: d begins like c (“around, up, and down”), while b begins with a tall line down followed by the bump. Distinct starting strokes give students a motor pattern that tells the letters apart. Teaching them together, allowing inconsistent formation, or copying without guided verbalization tends to increase reversals."
+ },
+ {
+  "id": "1C-01",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "recall",
+  "topic": "Comprehension difficulty: Simple View of Reading",
+  "stem": "The Simple View of Reading (Gough & Tunmer, 1986) represents reading comprehension as the <em>product</em> of decoding and language comprehension (RC = D × LC). Which conclusion about reading difficulties follows from this multiplicative form?",
+  "options": [
+   "Strong language comprehension can fully offset very weak decoding.",
+   "A severe weakness in either component will limit reading comprehension.",
+   "Reading comprehension difficulties always originate in weak decoding.",
+   "Language comprehension matters only after decoding becomes automatic."
+  ],
+  "answer": 1,
+  "explanation": "Because the two components are multiplied, a value near zero in either one produces low reading comprehension no matter how strong the other is, so neither can compensate for the other. This is why a student with dyslexia can comprehend poorly in print despite strong listening comprehension, and why a fluent decoder with weak language can also struggle. Difficulties can stem from decoding, language comprehension, or both, and both components matter throughout development, even though decoding explains more of the variation in the early grades."
+ },
+ {
+  "id": "1C-02",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "recall",
+  "topic": "Dyslexia: IDA definition (secondary consequences)",
+  "stem": "The IDA definition of dyslexia describes secondary consequences that may follow from the primary difficulty. Which of the following is one of those secondary consequences?",
+  "options": [
+   "Weak visual memory for the shapes and orientation of letters",
+   "Below-average general intellectual ability",
+   "Delayed gross motor coordination and balance",
+   "Reduced reading experience that can slow vocabulary growth"
+  ],
+  "answer": 3,
+  "explanation": "The IDA definition states that secondary consequences may include problems in reading comprehension and reduced reading experience that can impede growth of vocabulary and background knowledge. Dyslexia is not a visual-memory disorder, and the definition describes the difficulty as often unexpected in relation to other cognitive abilities, so low intelligence is not part of it."
+ },
+ {
+  "id": "1C-03",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "Comprehension difficulty: language comprehension vs. decoding",
+  "stem": "A fifth grader reads grade-level text accurately and at an appropriate rate, and his spelling is on grade level. However, he struggles to answer questions about passages whether he reads them himself or hears them read aloud. He also has a limited vocabulary and is confused by long, complex sentences. Which profile best describes this student?",
+  "options": [
+   "A specific language comprehension difficulty with adequate decoding",
+   "A decoding difficulty consistent with dyslexia",
+   "A mixed difficulty involving both decoding and language comprehension",
+   "A reading fluency difficulty with adequate language comprehension"
+  ],
+  "answer": 0,
+  "explanation": "Accurate, fluent decoding paired with poor comprehension of both read and heard text points to a weakness in language comprehension (what the KPEERI outline calls a specific language disability), not word recognition. Dyslexia would show up as inaccurate or slow word reading and weak spelling, with listening comprehension typically stronger than reading comprehension. A mixed profile would also include decoding weaknesses, which this student does not have."
+ },
+ {
+  "id": "1C-04",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "Comprehension difficulty: decoding-based (dyslexia) profile",
+  "stem": "A fourth grader understands and discusses grade-level books well when they are read aloud to her. When she reads on her own, she reads slowly, guesses at multisyllabic words, and her spelling is weak. Her reading comprehension scores are below average. Which explanation best fits this pattern?",
+  "options": [
+   "Poor language comprehension with adequate decoding",
+   "Weaknesses in both decoding and language comprehension",
+   "Poor decoding with adequate language comprehension",
+   "A visual processing problem affecting letter perception"
+  ],
+  "answer": 2,
+  "explanation": "Strong listening comprehension combined with slow, inaccurate word reading and weak spelling indicates that word recognition is the bottleneck, which is the profile most consistent with dyslexia. Her reading comprehension is low because decoding limits her access to the text, not because she struggles to understand language. Dyslexia is a language-based (phonological) difficulty, not a visual perception problem."
+ },
+ {
+  "id": "1C-05",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "recall",
+  "topic": "Dyslexia: IDA definition (core deficit)",
+  "stem": "According to the IDA definition, the word-reading and spelling difficulties associated with dyslexia typically result from a deficit in which component of language?",
+  "options": [
+   "Semantic",
+   "Syntactic",
+   "Phonological",
+   "Pragmatic"
+  ],
+  "answer": 2,
+  "explanation": "The IDA definition states that these difficulties “typically result from a deficit in the phonological component of language” that is often unexpected in relation to other cognitive abilities and the provision of effective classroom instruction. Semantic and syntactic skills are often relative strengths for students with dyslexia, which is why their listening comprehension may exceed their reading comprehension."
+ },
+ {
+  "id": "1C-06",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "English learners: cross-language sound differences",
+  "stem": "A first-grade English learner whose home language is Spanish reads <em>ship</em> as “chip” and has trouble hearing the difference between <em>bit</em> and <em>beat</em>. His other phonics skills are progressing well. What is the teacher's best interpretation and response?",
+  "options": [
+   "These are expected cross-language differences; teach the contrasts explicitly with articulation cues and minimal pairs",
+   "These are early signs of dyslexia; refer him for a special education evaluation before continuing with phonics instruction",
+   "These suggest a hearing problem; postpone phonics instruction until a full audiological evaluation is complete",
+   "These reflect a vocabulary gap; teach word meanings and avoid words with these sounds until his English improves"
+  ],
+  "answer": 0,
+  "explanation": "/sh/ is not a phoneme in most varieties of Spanish, and Spanish has a single /i/ vowel, so Spanish speakers often substitute /ch/ for /sh/ and confuse the short /ĭ/ in <em>bit</em> with the /ē/ in <em>beat</em>. These are predictable effects of the home language's sound system, best addressed through explicit articulation instruction and minimal-pair practice. A disability referral is not warranted on this evidence alone, especially when his other phonics skills are developing."
+ },
+ {
+  "id": "1C-07",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "English learners: language acquisition vs. learning disability",
+  "stem": "A second grader received kindergarten literacy instruction in Spanish and is now in her second year of English instruction. She is behind her classmates in reading. Which finding would most strongly suggest a learning disability rather than English language acquisition alone?",
+  "options": [
+   "Her English vocabulary is smaller than that of her native English-speaking peers",
+   "She has difficulty understanding English idioms and figurative expressions",
+   "She pronounces several English vowels with a noticeable Spanish accent",
+   "She also struggles with phonological awareness and decoding in Spanish"
+  ],
+  "answer": 3,
+  "explanation": "A smaller English vocabulary, difficulty with idioms, and accented pronunciation are typical of a student who is acquiring English. Difficulty with phonological awareness and decoding in her home language as well, despite prior instruction in that language, suggests an underlying difficulty that second-language learning does not explain, and it warrants further evaluation."
+ },
+ {
+  "id": "1C-08",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "Dialect differences: African American English",
+  "stem": "A student who speaks African American English reads the sentence <em>Yesterday he walked past the desk</em> aloud as “Yesterday he walk pas' the des'.” He answers comprehension questions about the passage correctly. What is the most appropriate interpretation?",
+  "options": [
+   "Score them as decoding errors and intensify phonics intervention",
+   "Treat them as dialect features, while explicitly teaching the written forms",
+   "Refer the student to a speech-language pathologist for an articulation disorder",
+   "Stop him at each word and require the standard pronunciation"
+  ],
+  "answer": 1,
+  "explanation": "Reducing final consonant clusters (walked → “walk,” past → “pas',” desk → “des'”) is a systematic, rule-governed feature of African American English, and his accurate comprehension shows he understood the text. Dialect-based pronunciations are generally not scored as decoding errors on oral reading measures, and they do not indicate an articulation disorder. The teacher should still explicitly teach spellings and morphemes (such as -ed) that the student may not hear in his own speech, because they will matter for spelling and writing."
+ },
+ {
+  "id": "1C-09",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "recall",
+  "topic": "Intensity of instruction: MTSS tiers",
+  "stem": "Within a multi-tiered system of supports (MTSS), Tier 3 intervention is best characterized as",
+  "options": [
+   "intensive, individualized instruction in very small groups, with frequent progress monitoring.",
+   "high-quality core instruction delivered to all students in the general education classroom setting.",
+   "supplemental small-group instruction added to core instruction for students at some risk.",
+   "an automatic placement in special education once a student is identified as at risk."
+  ],
+  "answer": 0,
+  "explanation": "Tier 3 is the most intensive level of support: smaller groups (often one to three students), more instructional time, highly targeted and individualized content, and more frequent progress monitoring. Tier 1 is core instruction for all students and Tier 2 is supplemental small-group instruction. Tier 3 is not the same as special education; some students receive Tier 3 support without an IEP."
+ },
+ {
+  "id": "1C-10",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "English learners: comprehension difficulty from syntax",
+  "stem": "An English learner reads the sentence <em>The boy was pushed by the girl</em> and then explains that the boy pushed the girl. He decoded every word correctly and knows what <em>push</em> means. Which response best addresses the source of his misunderstanding?",
+  "options": [
+   "Have him reread the sentence several times to build fluency",
+   "Show him a picture to reinforce the meaning of <em>pushed</em>",
+   "Refer him for an evaluation for a language disability",
+   "Explicitly teach how passive sentences show who did the action"
+  ],
+  "answer": 3,
+  "explanation": "He decoded and understood the words but interpreted the passive construction with an “actor comes first” strategy, a common syntactic stumbling block for English learners and young readers. Explicit instruction in passive voice (identifying who did the action and transforming sentences between active and passive forms) targets the syntactic source of the error. Rereading for fluency or reteaching the vocabulary word would not resolve a sentence-structure misunderstanding."
+ },
+ {
+  "id": "1C-11",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "Levels of difficulty: severity and instructional intensity",
+  "stem": "A third grader's word reading is at the 4th percentile. After 12 weeks of well-implemented Tier 2 small-group intervention, his progress-monitoring data remain far below his aim line. How should his reading difficulty be characterized, and what does that imply?",
+  "options": [
+   "Mild; continue the current intervention unchanged for another year",
+   "Severe; he needs more intensive, individualized instruction over time",
+   "Moderate; return him to core instruction and recheck at the next benchmark",
+   "Mild; provide audiobooks as an accommodation in place of intervention"
+  ],
+  "answer": 1,
+  "explanation": "Very low word reading (well below the 10th percentile) combined with an inadequate response to sound Tier 2 instruction indicates a severe difficulty. Severity is judged partly by the intensity, duration, and scope of instruction needed to remediate it: he needs smaller groups, more minutes, more explicit and individualized instruction, and likely consideration for a special education evaluation. Accommodations such as audiobooks support access to content but do not replace remediation."
+ },
+ {
+  "id": "1C-12",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "application",
+  "topic": "Implementing an intervention plan",
+  "stem": "A team is writing an intervention plan for a second grader whose reading difficulties stem from weak phonological processing and decoding. Which plan component is most consistent with Structured Literacy?",
+  "options": [
+   "Daily leveled-text reading with prompts to use pictures and context for unknown words",
+   "Colored overlays during reading to reduce visual stress and perceived letter movement",
+   "Explicit, systematic, cumulative phonics with progress monitoring every 1–2 weeks",
+   "Additional independent silent reading time each day with self-selected books"
+  ],
+  "answer": 2,
+  "explanation": "Structured Literacy instruction for a decoding deficit is explicit, systematic, and cumulative, and an intervention plan should include frequent progress monitoring to judge the student's response. Prompting students to guess from pictures and context works against accurate decoding, and colored overlays are not supported by evidence as a treatment for dyslexia. Independent silent reading does not provide the explicit instruction this student needs."
+ },
+ {
+  "id": "1C-13",
+  "domain": 1,
+  "subdomain": "1C",
+  "level": "analysis",
+  "topic": "Comprehension difficulty: interpreting a profile",
+  "stem": "The results below are for a fourth grader who is struggling with reading assignments. Based on this profile, which instructional priority is most appropriate?",
+  "data": {
+   "title": "Fourth-grade assessment results",
+   "headers": [
+    "Measure",
+    "Standard score"
+   ],
+   "rows": [
+    [
+     "Word reading (real words)",
+     "99"
+    ],
+    [
+     "Pseudoword decoding",
+     "102"
+    ],
+    [
+     "Oral reading fluency",
+     "96"
+    ],
+    [
+     "Receptive vocabulary",
+     "80"
+    ],
+    [
+     "Listening comprehension",
+     "79"
+    ],
+    [
+     "Reading comprehension",
+     "81"
+    ]
+   ],
+   "note": "Standard scores: mean = 100, SD = 15"
+  },
+  "options": [
+   "Oral language comprehension, including vocabulary and sentence structure",
+   "Intensive phonics intervention focused on decoding multisyllabic words by syllable",
+   "Repeated reading of grade-level passages to increase reading rate",
+   "Phoneme awareness training focused on blending and segmenting sounds"
+  ],
+  "answer": 0,
+  "explanation": "Word reading, decoding, and fluency are all in the average range, while vocabulary, listening comprehension, and reading comprehension are all roughly 1.3 standard deviations below the mean (around the 8th–10th percentiles). Because listening comprehension is as weak as reading comprehension, the limiting factor is language comprehension, not decoding. Instruction should target vocabulary, syntax, and text-level language, not more phonics or fluency work."
+ },
+ {
+  "id": "1D-01",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "recall",
+  "topic": "Assessment types: screening",
+  "stem": "A brief assessment given to all students at the beginning, middle, and end of the year to identify those at risk for reading difficulties is a(n)",
+  "options": [
+   "diagnostic assessment.",
+   "outcome assessment.",
+   "progress-monitoring assessment.",
+   "screening assessment."
+  ],
+  "answer": 3,
+  "explanation": "Universal screening is brief, is given to all students (typically three times a year), and identifies students who may be at risk and need further assessment or support. Diagnostic assessments are given to selected students to pinpoint specific skill gaps, outcome assessments evaluate end-of-year achievement, and progress monitoring tracks growth frequently for students receiving intervention."
+ },
+ {
+  "id": "1D-02",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "recall",
+  "topic": "Assessment types: diagnostic",
+  "stem": "Which purpose is best matched to a diagnostic assessment?",
+  "options": [
+   "Determining whether students met grade-level standards at the end of the year",
+   "Pinpointing a student's specific skill strengths and gaps to plan instruction",
+   "Quickly identifying which students in a whole class may be at risk",
+   "Measuring a student's rate of growth every week or two during intervention"
+  ],
+  "answer": 1,
+  "explanation": "Diagnostic assessments go deeper than screeners to identify exactly which skills a student has and lacks (for example, which phonics patterns or phonological skills), so instruction can be targeted. The other options describe outcome, screening, and progress-monitoring assessments, respectively."
+ },
+ {
+  "id": "1D-03",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "recall",
+  "topic": "Norm-referenced scores: standard scores and percentiles",
+  "stem": "On a norm-referenced test with a mean of 100 and a standard deviation of 15, a standard score of 85 corresponds approximately to which percentile rank?",
+  "options": [
+   "2nd",
+   "9th",
+   "16th",
+   "85th"
+  ],
+  "answer": 2,
+  "explanation": "A standard score of 85 is one standard deviation below the mean; in a normal distribution about 16% of scores fall at or below that point, so the percentile rank is about 16. A standard score of 70 (two standard deviations below) is about the 2nd percentile. Standard scores and percentile ranks are different scales, so a standard score of 85 is not the 85th percentile."
+ },
+ {
+  "id": "1D-04",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "recall",
+  "topic": "Evaluating assessments: validity",
+  "stem": "The validity of an assessment refers to",
+  "options": [
+   "how well it measures what it is intended to measure for a given purpose.",
+   "how consistent its scores are across repeated administrations or examiners.",
+   "how widely its scores are spread around the mean of the norm group.",
+   "how a student's score compares with a representative group of peers."
+  ],
+  "answer": 0,
+  "explanation": "Validity is the extent to which evidence supports using a test's scores for a particular purpose, that is, whether it actually measures the intended skill. Consistency across administrations or scorers is reliability; a test can be reliable without being valid. Comparing a student's score with a peer group describes norm-referenced interpretation."
+ },
+ {
+  "id": "1D-05",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Error patterns: spelling (consonant blends)",
+  "stem": "A first grader spells <em>jump</em> as “jup,” <em>stop</em> as “sop,” and <em>lent</em> as “let.” Which instruction would best address this error pattern?",
+  "options": [
+   "Memorizing whole-word spellings with flashcards and repeated copying",
+   "Segmenting each sound in blends with sound boxes, then spelling them",
+   "Learning vowel team patterns such as “ai,” “ee,” and “oa” for long vowels",
+   "Learning the rule for doubling a final consonant before adding a suffix"
+  ],
+  "answer": 1,
+  "explanation": "In each word the student omits one consonant from a blend (the /m/ or /n/ before a final consonant, or the /t/ in the initial “st”), while the vowels are correct. This indicates difficulty segmenting every phoneme in consonant clusters. Phoneme segmentation with sound boxes, followed by mapping a grapheme to each phoneme, directly targets the problem; rote memorization does not."
+ },
+ {
+  "id": "1D-06",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Error patterns: oral reading (VCe syllables)",
+  "stem": "During oral reading, a second grader reads <em>cape</em> as “cap,” <em>hope</em> as “hop,” and <em>kite</em> as “kit.” She reads closed-syllable words accurately. What should the teacher teach next?",
+  "options": [
+   "Using picture clues to check whether a word makes sense",
+   "Additional practice reading short vowels in closed-syllable words",
+   "The sounds of r-controlled vowels such as “ar,” “or,” and “er”",
+   "The vowel-consonant-e syllable, using contrasts such as cap/cape"
+  ],
+  "answer": 3,
+  "explanation": "Each error ignores the final e that signals a long vowel, so she is reading VCe words as closed syllables. Explicit instruction in the vowel-consonant-e syllable type, with minimal-pair contrasts (cap/cape, hop/hope, kit/kite), targets the gap. She already reads closed syllables accurately, and picture clues encourage guessing rather than decoding."
+ },
+ {
+  "id": "1D-07",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Evaluating validity of assessment results",
+  "stem": "A sixth grader with slow, effortful decoding scores at the 9th percentile on a timed, silent reading comprehension test. The teacher concludes that the student has a language comprehension disability. What should the teacher do before drawing that conclusion?",
+  "options": [
+   "Accept the result, since a norm-referenced score is already a valid measure",
+   "Readminister the same test the next day to confirm the score",
+   "Assess listening comprehension to see whether decoding limited the score",
+   "Place the student in a lower reading group for comprehension work"
+  ],
+  "answer": 2,
+  "explanation": "A timed reading comprehension test also depends on decoding and fluency, so for a slow decoder a low score may reflect word recognition rather than comprehension. Measuring listening comprehension (along with word reading) separates the two components of the Simple View of Reading and guards against an invalid interpretation. Retesting with the same measure would not clarify what the score actually reflects."
+ },
+ {
+  "id": "1D-08",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "analysis",
+  "topic": "Progress monitoring: decision rules",
+  "stem": "A third grader in Tier 2 intervention has a goal of improving from 42 to 72 words correct per minute (WCPM) over 20 weeks. The school uses a four-point decision rule. His weekly progress-monitoring scores are shown below. Which decision is best supported by the data?",
+  "data": {
+   "title": "Weekly oral reading fluency progress monitoring",
+   "headers": [
+    "Week",
+    "Student score (WCPM)",
+    "Aim line (WCPM)"
+   ],
+   "rows": [
+    [
+     "1",
+     "43",
+     "44"
+    ],
+    [
+     "2",
+     "44",
+     "45"
+    ],
+    [
+     "3",
+     "42",
+     "47"
+    ],
+    [
+     "4",
+     "45",
+     "48"
+    ],
+    [
+     "5",
+     "44",
+     "50"
+    ],
+    [
+     "6",
+     "46",
+     "51"
+    ],
+    [
+     "7",
+     "45",
+     "53"
+    ],
+    [
+     "8",
+     "46",
+     "54"
+    ]
+   ],
+   "note": "Aim line: 42 WCPM baseline rising 1.5 WCPM per week toward a goal of 72 WCPM at week 20"
+  },
+  "options": [
+   "Modify the intervention, because four consecutive scores fall below the aim line",
+   "Raise the goal, because the student is growing faster than expected",
+   "Keep the intervention unchanged, because the scores are generally increasing over time",
+   "Stop progress monitoring until the next schoolwide benchmark assessment"
+  ],
+  "answer": 0,
+  "explanation": "Under a four-point rule, four consecutive data points below the aim line signal that the intervention should be changed (for example, more time, a smaller group, or different content). The student has gained only about 3 WCPM in 8 weeks, far less than the 1.5 WCPM per week needed, so continuing unchanged would not reach the goal. Raising the goal is appropriate only when several consecutive points fall above the aim line."
+ },
+ {
+  "id": "1D-09",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Communicating assessment results to parents",
+  "stem": "At a conference, a parent says, “The report says my son scored at the 30th percentile in reading. Does that mean he got only 30% of the questions right?” Which response is most accurate?",
+  "options": [
+   "Yes, it means he answered about 30% of the items correctly.",
+   "No, he scored as high as or higher than about 30% of same-grade peers.",
+   "No, it means he is reading about 30% below his grade level.",
+   "No, it means his score could rise or fall by about 30 points on a retest."
+  ],
+  "answer": 1,
+  "explanation": "A percentile rank indicates the percentage of students in the norm group who scored at or below the student's score; it is not a percent-correct score. It describes his standing relative to peers, not how many items he answered correctly or how far below grade level he is. Clear explanations like this support accurate, transparent communication with families."
+ },
+ {
+  "id": "1D-10",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "analysis",
+  "topic": "Patterns of strengths and weaknesses",
+  "stem": "A second grader's assessment results are shown below. Which instructional priority is best supported by the data?",
+  "data": {
+   "title": "Second-grade assessment results",
+   "headers": [
+    "Measure",
+    "Score"
+   ],
+   "rows": [
+    [
+     "Phonological awareness: elision (scaled score)",
+     "5"
+    ],
+    [
+     "Phonological awareness: blending (scaled score)",
+     "6"
+    ],
+    [
+     "Rapid automatized naming (standard score)",
+     "98"
+    ],
+    [
+     "Letter–sound knowledge: consonants",
+     "21 of 21 correct"
+    ],
+    [
+     "Letter–sound knowledge: short vowels",
+     "2 of 5 correct"
+    ],
+    [
+     "Word reading (standard score)",
+     "78"
+    ],
+    [
+     "Pseudoword decoding (standard score)",
+     "75"
+    ],
+    [
+     "Listening comprehension (standard score)",
+     "104"
+    ]
+   ],
+   "note": "Standard scores: mean = 100, SD = 15. Scaled scores: mean = 10, SD = 3."
+  },
+  "options": [
+   "Rapid naming drills to speed up retrieval of letter names",
+   "Comprehension strategy instruction using grade-level informational texts",
+   "Vocabulary instruction through interactive read-alouds",
+   "Phoneme awareness and short-vowel instruction linked to decoding"
+  ],
+  "answer": 3,
+  "explanation": "Phonological awareness scaled scores of 5 and 6 are more than one standard deviation below the mean (roughly the 5th–9th percentiles), short-vowel knowledge is weak, and word reading and decoding are well below average, while rapid naming and listening comprehension are average. The data point to phonemic awareness and short-vowel sound–symbol correspondences as the barriers to decoding. Rapid naming is already average, and average listening comprehension indicates that language comprehension is not the primary need."
+ },
+ {
+  "id": "1D-11",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Initiating referrals: hearing",
+  "stem": "A kindergarten teacher notices that one student often asks for directions to be repeated, does not respond when called from behind, and has difficulty with rhyming and sound-matching activities. The parent mentions that the child has frequent ear infections. What is the teacher's most appropriate first step?",
+  "options": [
+   "Recommend that the family begin a vision therapy program",
+   "Tell the parent that the child shows signs of dyslexia",
+   "Request a hearing screening through the school nurse",
+   "Send home extra phonics worksheets for nightly practice"
+  ],
+  "answer": 2,
+  "explanation": "These signs suggest a possible hearing problem, which can affect phonological awareness and must be ruled out before a learning difficulty is assumed. Requesting a hearing screening is the appropriate first referral. Telling the parent the child has signs of dyslexia would be premature and outside the teacher's role, and vision therapy does not address the observed concerns."
+ },
+ {
+  "id": "1D-12",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "analysis",
+  "topic": "Error patterns: spelling (morphology and suffixes)",
+  "stem": "A third grader produced the following spellings on a dictated spelling assessment. Which instructional focus is best supported by the error pattern?",
+  "sample": "Dictated word    Student's spelling\nhopping          hoping\nmaking           makeing\nrunning          runing\ncried            cryed\njumped           jumpt\nbaked            bakt",
+  "options": [
+   "Suffix-addition rules (doubling, drop e, change y to i) and the -ed morpheme",
+   "Phoneme segmentation, since many of the sounds in the words are missing or out of order",
+   "Short-vowel sound–symbol correspondences in closed syllables",
+   "Memorizing high-frequency irregular words through visual practice"
+  ],
+  "answer": 0,
+  "explanation": "Every spelling represents all of the sounds in the word, so phoneme segmentation is intact. The errors occur when suffixes are added: not doubling the final consonant (hopping, running), not dropping the final e (making), not changing y to i (cried), and spelling the past-tense -ed by its sound (jumpt, bakt). Instruction in suffix-addition generalizations and the consistent spelling of the -ed morpheme addresses this morphological pattern."
+ },
+ {
+  "id": "1D-13",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Soliciting input from colleagues",
+  "stem": "A second grader decodes accurately but has trouble following multistep oral directions, often cannot retrieve the word she wants to say, uses short and simple sentences, and struggles to retell stories. Which colleague's input would be most helpful in understanding her needs?",
+  "options": [
+   "The occupational therapist",
+   "The speech-language pathologist",
+   "The school counselor",
+   "The school nurse"
+  ],
+  "answer": 1,
+  "explanation": "Difficulty following oral directions, word retrieval problems, simple expressive syntax, and weak narrative retelling are oral language concerns within the expertise of a speech-language pathologist. The SLP's input can help determine whether a language disorder is contributing to her learning needs. An occupational therapist addresses fine motor and sensory needs rather than language."
+ },
+ {
+  "id": "1D-14",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "analysis",
+  "topic": "Oral reading fluency: accuracy and rate",
+  "stem": "A third grader's winter oral reading fluency results are shown below. What is the most appropriate next step?",
+  "data": {
+   "title": "Third-grade winter oral reading fluency (grade-level passage)",
+   "headers": [
+    "Measure",
+    "Result"
+   ],
+   "rows": [
+    [
+     "Words correct per minute (WCPM)",
+     "61"
+    ],
+    [
+     "Accuracy",
+     "86%"
+    ],
+    [
+     "School's winter benchmark",
+     "90 WCPM with at least 95% accuracy"
+    ],
+    [
+     "Most frequent errors",
+     "Multisyllabic words and vowel teams"
+    ],
+    [
+     "Listening comprehension of grade-level text",
+     "Strong"
+    ]
+   ]
+  },
+  "options": [
+   "Repeated reading of grade-level passages to build reading rate and automaticity",
+   "Comprehension strategy lessons on summarizing and predicting",
+   "Reader's theater to improve expression and phrasing",
+   "A phonics diagnostic to pinpoint decoding gaps for explicit teaching"
+  ],
+  "answer": 3,
+  "explanation": "Accuracy of 86% is well below the roughly 95% level expected for fluent reading, so the low rate stems from inaccurate decoding, not just slow reading. A phonics diagnostic (for example, of vowel teams and syllable division in multisyllabic words) will identify specific gaps to teach explicitly before rate becomes the focus. Repeated reading with this many errors risks practicing inaccuracies, and strong listening comprehension suggests comprehension instruction is not the priority."
+ },
+ {
+  "id": "1D-15",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "application",
+  "topic": "Documenting progress toward goals",
+  "stem": "A student's intervention goal is to read words with the vowel-consonant-e pattern accurately. Which method would best document her progress toward this goal?",
+  "options": [
+   "Recording the teacher's general impressions in quarterly anecdotal notes",
+   "Counting the number of library books the student checks out each month",
+   "Graphing weekly scores on brief probes of untaught VCe words and pseudowords",
+   "Comparing this year's state reading test score with the student's score from last year"
+  ],
+  "answer": 2,
+  "explanation": "Brief, frequent probes that directly sample the target skill, including words not practiced in lessons and pseudowords that show true decoding rather than memorization, provide objective, graphable evidence of progress toward the specific goal. Anecdotal impressions are subjective, and annual state tests are too infrequent and too broad to document progress on a single skill."
+ },
+ {
+  "id": "1D-16",
+  "domain": 1,
+  "subdomain": "1D",
+  "level": "analysis",
+  "topic": "Interpreting and communicating norm-referenced results",
+  "stem": "A school psychologist's report for a third grader includes the results below. Which statement to the student's parents most accurately communicates these results?",
+  "data": {
+   "title": "Selected results from a norm-referenced achievement test",
+   "headers": [
+    "Subtest",
+    "Standard score",
+    "95% confidence interval",
+    "Percentile rank",
+    "Grade equivalent"
+   ],
+   "rows": [
+    [
+     "Word Reading",
+     "79",
+     "73–85",
+     "8",
+     "1.9"
+    ],
+    [
+     "Pseudoword Decoding",
+     "77",
+     "71–83",
+     "6",
+     "1.7"
+    ],
+    [
+     "Listening Comprehension",
+     "103",
+     "96–110",
+     "58",
+     "3.6"
+    ]
+   ],
+   "note": "Standard scores: mean = 100, SD = 15"
+  },
+  "options": [
+   "Her word reading and decoding are well below most peers, while her listening comprehension is average.",
+   "She reads at a first-grade level, so all of her instruction in every subject should use first-grade materials.",
+   "Her listening comprehension shows she is above average and will catch up on her own.",
+   "Because each score has a confidence interval, the results cannot be interpreted yet."
+  ],
+  "answer": 0,
+  "explanation": "Word Reading and Pseudoword Decoding fall around the 6th–8th percentiles, roughly 1.4–1.5 standard deviations below the mean, while Listening Comprehension (58th percentile) is solidly average, so word-level reading is the area of need. Grade equivalents are easily misinterpreted and should not be used to set an instructional level for everything. A confidence interval describes the precision of a score; it does not make the score uninterpretable."
+ },
+ {
+  "id": "2A-01",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "recall",
+  "topic": "Design instruction: cumulative principle",
+  "stem": "In Structured Literacy, instruction described as <em>cumulative</em> means that",
+  "options": [
+   "skills are introduced in the order they appear in the week's grade-level read-aloud.",
+   "each new concept builds on previously taught concepts, which continue to be reviewed and practiced.",
+   "the total number of instructional minutes increases steadily as the school year progresses.",
+   "students move on to increasingly difficult leveled texts as their oral reading accuracy and fluency improve."
+  ],
+  "answer": 1,
+  "explanation": "Cumulative instruction means each step builds on what was already taught, and earlier skills keep getting reviewed so they stay mastered. Moving students up through leveled texts is a balanced-literacy idea about text difficulty. It doesn't describe how skills build on each other."
+ },
+ {
+  "id": "2A-02",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "recall",
+  "topic": "Prescribe measurable goals",
+  "stem": "Which goal statement is written in measurable terms that would support progress monitoring?",
+  "options": [
+   "Mia will make noticeable improvement in her oral reading fluency during the second semester.",
+   "Mia will show greater confidence and enjoyment when she reads aloud to her classmates and family members.",
+   "Mia will understand short vowel sounds and begin applying them when reading new words.",
+   "By May, given second-grade passages, Mia will read 70 words correct per minute with 95% accuracy."
+  ],
+  "answer": 3,
+  "explanation": "A measurable goal gives the conditions (second-grade passages), an observable behavior (words correct per minute), a criterion (70 WCPM, 95% accuracy), and a time frame (by May). Progress monitoring data can be compared directly to it. \"Noticeable improvement\" and \"understand\" sound like goals, but neither can be measured or tracked over time."
+ },
+ {
+  "id": "2A-03",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Design instruction: explicit, systematic introduction of a new pattern",
+  "stem": "A teacher is planning to introduce the vowel-consonant-e pattern \"a_e\" to a group that has mastered closed syllables. Which lesson sequence best reflects explicit, systematic instruction?",
+  "options": [
+   "Review closed syllables, model pairs such as \"cap/cape,\" guide reading and spelling practice, then read decodable text with \"a_e\" words.",
+   "Read a leveled book together, pause at \"a_e\" words, and prompt students to check the picture and the first letter to figure out each word.",
+   "Give students a list of \"a_e\" words to sort independently all week, then ask them on Friday to explain the rule they discovered.",
+   "Introduce \"a_e,\" \"i_e,\" \"o_e,\" and \"u_e\" in one lesson so students see the whole pattern at once, then assign a practice worksheet."
+  ],
+  "answer": 0,
+  "explanation": "This sequence connects the new pattern to the closed syllables students already know, models it directly with contrasting pairs, moves from guided practice to applying it in decodable text, and includes both reading and spelling. Prompting students to use pictures and first letters is three-cueing, which pulls attention away from decoding. Introducing every VCe pattern at once is not systematic."
+ },
+ {
+  "id": "2A-04",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Adaptations: working memory",
+  "stem": "A third grader with weak working memory struggles during sentence dictation. He often forgets the sentence partway through writing it. Which planned adaptation is most appropriate?",
+  "options": [
+   "Replace sentence dictation with copying the same sentences from a printed model placed on his desk.",
+   "Have the student say each sentence aloud while a trained peer writes it down, so he can focus on his ideas.",
+   "Dictate shorter phrases, have him repeat each phrase before writing, and give him a proofreading checklist.",
+   "Excuse the student from dictation and give him extra independent reading time instead."
+  ],
+  "answer": 2,
+  "explanation": "Chunking the sentence and having the student repeat each phrase before writing reduces the load on working memory. The student still practices encoding, and the checklist supports self-monitoring. Copying or having a peer write removes the encoding practice dictation is meant to build, so the student never practices the target skill."
+ },
+ {
+  "id": "2A-05",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Integrate components: phonemic awareness, phonics, spelling",
+  "stem": "First graders have just been taught the digraph \"sh.\" Which activity best integrates phonemic awareness, phonics, and spelling in a single task?",
+  "options": [
+   "Students listen to a read-aloud story with many \"sh\" words and raise a hand each time they hear one.",
+   "Students trace the letters \"sh\" in a sand tray while saying the two letter names aloud.",
+   "Students segment <em>ship</em> into sounds, map each sound to letter tiles, then write the word.",
+   "Students copy a list of \"sh\" words five times each, focusing on neat handwriting."
+  ],
+  "answer": 2,
+  "explanation": "Segmenting the word's phonemes is phonemic awareness, mapping /sh/ to the two-letter grapheme is phonics, and writing the word is spelling, so one task links all three. Listening for \"sh\" words practices only auditory awareness. Copying words practices handwriting, but students never have to think about which sounds go with which letters."
+ },
+ {
+  "id": "2A-06",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Adaptations: English language learners",
+  "stem": "A fifth-grade English learner whose first language is Spanish is starting a science unit with the words <em>evaporation</em>, <em>condensation</em>, and <em>precipitation</em>. Which planning decision best supports his vocabulary learning?",
+  "options": [
+   "Point out cognates such as <em>evaporación</em> and connect the English suffix \"-tion\" to Spanish \"-ción.\"",
+   "Postpone academic vocabulary instruction until the student's conversational English has become fully fluent.",
+   "Have the student look up each word in a picture dictionary on his own before the unit begins.",
+   "Replace the scientific terms with simpler everyday words in all of the student's unit materials."
+  ],
+  "answer": 0,
+  "explanation": "Many academic English words built from Latin roots have Spanish cognates. Teaching the matching suffixes (\"-tion\"/\"-ción\") lets the student use morphology he already knows in his first language. Waiting for conversational fluency, or replacing the terms, keeps him from the academic vocabulary he needs to understand grade-level content."
+ },
+ {
+  "id": "2A-07",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Adaptations: attention",
+  "stem": "A second grader with attention difficulties is in a 40-minute intervention block. Which planning adaptation is most likely to sustain her attention without reducing instructional content?",
+  "options": [
+   "Shorten her lesson to 20 minutes and return her to the classroom for the remaining time.",
+   "Plan one extended activity for the block so she does not have to make frequent transitions.",
+   "Let her choose which parts of the lesson to participate in and which to sit out each day.",
+   "Structure the lesson as a series of brief, well-paced activities with frequent student responses."
+  ],
+  "answer": 3,
+  "explanation": "Short, well-paced segments with many chances to respond keep the student engaged while keeping all the planned content. A single long activity is harder to sustain attention through. Shortening the lesson or letting her opt out reduces the instruction she needs."
+ },
+ {
+  "id": "2A-08",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Design instruction: decodable text aligned to scope and sequence",
+  "stem": "A group has been taught short vowels in closed syllables, the digraphs \"sh,\" \"ch,\" and \"th,\" and the vowel-consonant-e pattern. The teacher wants a text that will let them practice applying these decoding skills. Which text is the best choice?",
+  "options": [
+   "A predictable patterned book with a repeated sentence frame and strong picture support",
+   "A decodable passage made up almost entirely of taught patterns and taught high-frequency words",
+   "A rich grade-level trade book that the teacher reads aloud while students follow along",
+   "A leveled reader matched to the group's instructional level based on their most recent running record"
+  ],
+  "answer": 1,
+  "explanation": "A decodable passage built on taught patterns lets students apply exactly the skills they have learned and get practice decoding them successfully. A read-aloud is valuable for vocabulary and comprehension, but students are not decoding. Patterned and leveled books often contain untaught patterns that students guess at from pictures or memory."
+ },
+ {
+  "id": "2A-09",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Adaptations: dialect differences",
+  "stem": "A student who speaks African American English often reduces final consonant clusters in speech (for example, saying <em>tes</em> for <em>test</em>) and spells words the way she pronounces them. Which planning approach is most appropriate?",
+  "options": [
+   "Plan explicit work on final blends, contrasting how a word may be pronounced with how it is spelled.",
+   "Refer the student for a speech-language evaluation, since the pattern signals an articulation disorder.",
+   "Accept spellings such as \"tes\" as correct, because they accurately reflect her pronunciation.",
+   "Tell the student to stop using home-dialect pronunciations at school so her spelling will improve."
+  ],
+  "answer": 0,
+  "explanation": "Final consonant cluster reduction is a regular feature of African American English. It is not a disorder. Contrastive analysis teaches the written form directly while respecting the student's dialect. Referring her for an evaluation would treat a dialect difference as a disability. Accepting the spellings would leave her without the standard written forms she needs."
+ },
+ {
+  "id": "2A-10",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "application",
+  "topic": "Adaptations: executive function in written expression",
+  "stem": "A fifth grader with executive-function weaknesses writes paragraphs that are disorganized and frequently unfinished. Which planned adaptation best supports his written expression?",
+  "options": [
+   "Let him write freely without any required structure so that his ideas are not constrained.",
+   "Assign longer and more frequent writing tasks so that he gets more practice organizing his own ideas.",
+   "Provide a paragraph organizer, teach a step-by-step planning routine, and add a self-monitoring checklist.",
+   "Grade only his spelling and handwriting so that organization does not lower his score."
+  ],
+  "answer": 2,
+  "explanation": "Executive-function weaknesses affect planning, organizing, and self-monitoring. An explicit planning routine, a visual organizer, and a checklist support those processes while he builds the skills himself. Longer assignments add more demand without teaching him how to organize."
+ },
+ {
+  "id": "2A-11",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "analysis",
+  "topic": "Prescribe goals from progress-monitoring data",
+  "stem": "A second grader's intervention goal is 50 words correct per minute (WCPM) by week 10, starting from a baseline of 30 WCPM. Her weekly progress-monitoring results are shown. Based on these data, what should the teacher do?",
+  "data": {
+   "title": "Weekly oral reading fluency (grade 2 passages)",
+   "headers": [
+    "Week",
+    "Aimline (WCPM)",
+    "Student WCPM",
+    "Accuracy"
+   ],
+   "rows": [
+    [
+     "1",
+     "32",
+     "31",
+     "84%"
+    ],
+    [
+     "2",
+     "34",
+     "32",
+     "85%"
+    ],
+    [
+     "3",
+     "36",
+     "32",
+     "83%"
+    ],
+    [
+     "4",
+     "38",
+     "33",
+     "85%"
+    ],
+    [
+     "5",
+     "40",
+     "33",
+     "84%"
+    ],
+    [
+     "6",
+     "42",
+     "34",
+     "86%"
+    ]
+   ],
+   "note": "Aimline rises 2 WCPM per week from the baseline of 30 to the goal of 50."
+  },
+  "options": [
+   "Continue the current plan without changes, because her score has gone up nearly every week since baseline.",
+   "Lower the goal to 40 WCPM so the student can experience success and stay motivated.",
+   "Move her to harder passages, since the current passages are not challenging her enough.",
+   "Make an instructional change guided by error analysis, since four consecutive scores are below the aimline."
+  ],
+  "answer": 3,
+  "explanation": "A common decision rule is that four consecutive data points below the aimline call for an instructional change. Here every score is below the aimline, and the gap keeps widening. Her accuracy of about 85% suggests decoding errors, so error analysis should guide the change. Small weekly gains are not enough when she is falling further behind the rate she needs to reach the goal."
+ },
+ {
+  "id": "2A-12",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "analysis",
+  "topic": "Design instruction targeting goals from assessment profile",
+  "stem": "A fourth grader's assessment results are shown below. Which instructional plan best targets this student's needs?",
+  "data": {
+   "title": "Fourth-grade assessment profile",
+   "headers": [
+    "Measure",
+    "Standard score"
+   ],
+   "rows": [
+    [
+     "Phonological awareness composite",
+     "82"
+    ],
+    [
+     "Real-word reading",
+     "80"
+    ],
+    [
+     "Pseudoword decoding",
+     "76"
+    ],
+    [
+     "Spelling",
+     "78"
+    ],
+    [
+     "Listening comprehension",
+     "108"
+    ],
+    [
+     "Receptive vocabulary",
+     "105"
+    ]
+   ],
+   "note": "Standard scores: mean = 100, SD = 15"
+  },
+  "options": [
+   "Focus the intervention mainly on vocabulary and comprehension strategy instruction using grade-level texts.",
+   "Prioritize systematic phonemic awareness, phonics, and spelling, with grade-level content provided orally.",
+   "Use repeated reading of grade-level passages as the sole intervention to build reading fluency.",
+   "Teach the student to rely on context and picture clues when he meets unfamiliar words."
+  ],
+  "answer": 1,
+  "explanation": "The student's phonological awareness, decoding, word reading, and spelling scores are all low, but his listening comprehension and vocabulary are average or above. This pattern fits a word-recognition (dyslexic) profile, so the plan should target phonological and phonics skills while keeping his access to grade-level ideas through oral language. His language comprehension is a strength, so a comprehension-strategy focus would miss the actual weakness."
+ },
+ {
+  "id": "2A-13",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "analysis",
+  "topic": "Prescribe goals from error patterns in spelling",
+  "stem": "A second grader produced the spellings below on a dictated spelling inventory. Which instructional focus should the teacher plan next?",
+  "sample": "Dictated word -> Student spelling\nship   -> ship\nchin   -> chin\nbike   -> bike\nhope   -> hope\ntrain  -> trane\nfloat  -> flote\nrain   -> rane\ncoat   -> cote",
+  "options": [
+   "Vowel teams such as \"ai\" and \"oa,\" contrasted with the vowel-consonant-e spellings he already knows",
+   "Consonant digraphs such as \"sh,\" \"ch,\" and \"th\" in the initial and final positions",
+   "Short vowel sounds in closed syllables, beginning with words that have short <em>a</em> and short <em>i</em>",
+   "Adding the inflectional endings \"-ed\" and \"-ing\" to base words with and without spelling changes"
+  ],
+  "answer": 0,
+  "explanation": "The student spells closed-syllable words, digraphs, and VCe words correctly. He also represents every long vowel sound, but he uses the VCe pattern where a vowel team is needed (\"trane,\" \"flote\"). The next step is explicit instruction in vowel teams, contrasted with VCe. He already spells digraphs and short vowels correctly, so teaching them again would waste time."
+ },
+ {
+  "id": "2A-14",
+  "domain": 2,
+  "subdomain": "2A",
+  "level": "analysis",
+  "topic": "Integrate components in a Structured Literacy lesson",
+  "stem": "An interventionist drafted the 45-minute lesson plan below for a student with dyslexia. Which revision would best align the lesson with Structured Literacy principles?",
+  "data": {
+   "title": "Draft lesson plan (45 minutes)",
+   "headers": [
+    "Component",
+    "Minutes"
+   ],
+   "rows": [
+    [
+     "Phonemic awareness warm-up",
+     "3"
+    ],
+    [
+     "Review of previously taught sound cards",
+     "5"
+    ],
+    [
+     "Introduce new concept: r-controlled \"ar\"",
+     "5"
+    ],
+    [
+     "Word reading with new and review patterns",
+     "7"
+    ],
+    [
+     "Silent reading of a self-selected library book",
+     "20"
+    ],
+    [
+     "Spelling dictation",
+     "5"
+    ]
+   ]
+  },
+  "options": [
+   "Remove the review of previously taught sound cards to free up time for more new content.",
+   "Replace the spelling dictation with a worksheet that asks the student to circle \"ar\" words.",
+   "Extend the phonemic awareness warm-up to 20 minutes so that the student's foundational skills get stronger.",
+   "Use part of the self-selected reading time for guided oral reading of decodable text with \"ar\" words."
+  ],
+  "answer": 3,
+  "explanation": "Almost half the lesson is unmonitored silent reading of a book that likely includes untaught patterns. The student gets no feedback and doesn't apply the new pattern in connected text. Guided oral reading of decodable text reinforces the \"ar\" pattern with teacher feedback. Removing the review would undercut the cumulative practice students with dyslexia need."
+ },
+ {
+  "id": "2B-01",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "recall",
+  "topic": "Clear, specific, immediate feedback",
+  "stem": "Which description best characterizes effective corrective feedback during a Structured Literacy decoding lesson?",
+  "options": [
+   "Delayed until the end of the lesson so that the student’s momentum and confidence are not interrupted",
+   "General praise for effort, offered whether or not the response was accurate",
+   "Immediate and specific, pointing to the error and ending with a correct response",
+   "Given only in writing so that the student can review it independently later"
+  ],
+  "answer": 2,
+  "explanation": "Explicit instruction calls for feedback that is immediate, specific, and corrective: the teacher draws attention to the exact part of the error, and the student then produces the correct response. Delaying feedback lets an incorrect response be practiced and strengthened, and general praise for effort gives the student no information about what to fix."
+ },
+ {
+  "id": "2B-02",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "recall",
+  "topic": "Multisensory techniques: Simultaneous Oral Spelling",
+  "stem": "Simultaneous Oral Spelling (SOS), a multisensory technique used in Orton-Gillingham–based lessons, requires the student to",
+  "options": [
+   "repeat the dictated word, name each letter while writing it, and then read it back",
+   "trace a word written in sand while the teacher reads aloud a sentence containing it",
+   "look at a printed word, cover it, write it from memory, and then check it against the model",
+   "clap the syllables in a spoken word and then find the word in a list of printed words"
+  ],
+  "answer": 0,
+  "explanation": "In SOS the student hears the word, repeats it, names each letter while writing it (linking auditory, visual, and kinesthetic input), and then reads back what was written. “Look–cover–write–check” is a visual memorization routine; it does not require the student to connect the spoken word to its letters as the word is written."
+ },
+ {
+  "id": "2B-03",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "recall",
+  "topic": "Sufficient practice: cumulative review",
+  "stem": "Which term describes the planned, systematic revisiting of previously taught phonics patterns and words alongside new content in every lesson?",
+  "options": [
+   "Massed practice",
+   "Errorless learning",
+   "Guided discovery",
+   "Cumulative review"
+  ],
+  "answer": 3,
+  "explanation": "Cumulative review is a defining feature of Structured Literacy: previously learned material is regularly reviewed and integrated with new learning so that skills are retained and become automatic. Massed practice concentrates a large amount of practice on one skill in a single session, which can raise short-term performance but does not produce durable retention."
+ },
+ {
+  "id": "2B-04",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "recall",
+  "topic": "Sufficient practice: automaticity",
+  "stem": "In reading instruction, <em>automaticity</em> refers to",
+  "options": [
+   "reading a text silently and quickly without subvocalizing any of the words",
+   "fast, accurate, effortless word recognition that needs little conscious attention",
+   "using context and picture cues to rapidly predict words that are unfamiliar to the reader",
+   "the speed at which a student completes independent written assignments"
+  ],
+  "answer": 1,
+  "explanation": "Automaticity is word recognition so fast and accurate that it requires little conscious effort, which frees attention and working memory for comprehension. It is built through sufficient accurate practice. Predicting words from context or pictures is a compensatory guessing strategy, not automatic word recognition."
+ },
+ {
+  "id": "2B-05",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "recall",
+  "topic": "Technology that facilitates learning",
+  "stem": "Which statement best describes the appropriate role of text-to-speech software for a student with dyslexia?",
+  "options": [
+   "It replaces the need for explicit decoding instruction once the student reaches the upper grades.",
+   "It gives access to grade-level content while the student continues decoding instruction.",
+   "It should be avoided, because listening to text weakens a student’s reading comprehension.",
+   "It is mainly a tool for improving the student’s spelling of irregular high-frequency words."
+  ],
+  "answer": 1,
+  "explanation": "Assistive technology such as text-to-speech is an accommodation that lets the student access grade-level vocabulary and content through listening. It is used alongside, not instead of, continued explicit instruction in decoding. Using it to replace decoding instruction would leave the underlying word-reading difficulty unaddressed."
+ },
+ {
+  "id": "2B-06",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Corrective feedback for decoding errors",
+  "stem": "During a lesson on vowel-consonant-e syllables, a student reads the word <em>cape</em> as “cap.” Which teacher response provides the most effective corrective feedback?",
+  "options": [
+   "Points to the illustration and asks the student which word would make the most sense in the sentence",
+   "Says, “Close—the word is <em>cape</em>,” and has the student continue reading the passage",
+   "Tells the student to skip the word, finish the sentence, and return to it using context",
+   "Points to the final “e,” asks what sound the “a” makes, and has the student reread the word"
+  ],
+  "answer": 3,
+  "explanation": "Effective correction directs the student to the part of the word that was misread and prompts the student to apply the taught pattern (in a vowel-consonant-e syllable the vowel is long, /ā/), followed by an accurate reread. Picture and context prompts teach guessing, and simply supplying the word gives the student no practice applying the pattern."
+ },
+ {
+  "id": "2B-07",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Adapting for working memory",
+  "stem": "During a word-reading drill, a student with a working memory weakness produces each sound in <em>stamp</em> correctly (/s/ /t/ /ă/ /m/ /p/), but by the last sound he has forgotten the first ones and cannot blend the word. Which in-lesson adaptation is most appropriate?",
+  "options": [
+   "Use successive blending: blend the first two sounds, then add one sound at a time (/st/, /stă/, /stăm/, /stămp/)",
+   "Have him memorize longer words as whole units from flash cards instead of sounding them out",
+   "Skip words with more than three sounds until his working memory improves",
+   "Have him say the five sounds again more slowly, pausing longer between each one"
+  ],
+  "answer": 0,
+  "explanation": "Successive (cumulative) blending reduces the load on working memory. Instead of holding five separate sounds until the end, the student blends as he goes, holding only one growing chunk plus the next sound, and he still decodes the word sound by sound. Slowing down and lengthening the pauses makes him hold each sound longer, which increases the memory demand. Memorizing whole words abandons decoding, and skipping longer words removes the practice he needs."
+ },
+ {
+  "id": "2B-08",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Adapting for English language learners",
+  "stem": "During a short-vowel lesson, a student whose first language is Spanish spells the dictated words <em>bit</em> as “beet” and <em>fill</em> as “feel.” Which adaptation best addresses these errors?",
+  "options": [
+   "Move the student ahead to vowel teams, since the student already spells /ē/ as “ee”",
+   "Mark the words correct, because the errors simply reflect the student’s home language",
+   "Contrast /ĭ/ and /ē/ in minimal pairs, noting mouth position, and link each to its spelling",
+   "Have the student look at a picture of each word before writing the word from memory"
+  ],
+  "answer": 2,
+  "explanation": "Spanish has a vowel close to English /ē/ but no /ĭ/, so Spanish-speaking learners often do not perceive the difference between these two English vowels. Explicit articulation work with minimal pairs (bit/beet, fill/feel), connected to the spellings, builds the phoneme distinction the student needs. Accepting the spellings as correct would leave the student unable to represent a very common English vowel."
+ },
+ {
+  "id": "2B-09",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Engagement: pacing and opportunities to respond",
+  "stem": "Midway through a small-group lesson, several students’ attention drifts during the teacher’s lengthy explanation of a new spelling pattern. Which adjustment would best increase engagement?",
+  "options": [
+   "Extend the explanation so that every student hears the concept several more times",
+   "Assign an independent worksheet so that students can work through the new pattern at their own pace",
+   "Move students who are off task to a separate table to complete the work alone",
+   "Shift to brisk pacing with frequent student responses, such as choral and partner answers"
+  ],
+  "answer": 3,
+  "explanation": "Explicit instruction keeps students engaged through brisk pacing and frequent opportunities to respond (choral responses, partner responses, whiteboard responses), which also lets the teacher check understanding in real time. Lengthening teacher talk increases passive listening, and moving to independent work before guided practice risks students practicing errors."
+ },
+ {
+  "id": "2B-10",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Reciprocal activities: phonology, reading, and spelling",
+  "stem": "A teacher wants one activity that strengthens phonemic awareness, decoding, and spelling of closed-syllable words at the same time. Which activity best meets this goal?",
+  "options": [
+   "Sorting picture cards by the number of syllables heard in each picture’s name",
+   "Changing one letter at a time to build and read new words, as in sat → sit → sip → lip",
+   "Practicing a list of ten high-frequency words on flash cards until they are memorized",
+   "Listening to an audiobook and answering oral questions about the main events"
+  ],
+  "answer": 1,
+  "explanation": "Word chaining requires students to notice which sound changed (phonemic awareness), choose the letter that spells it (spelling), and blend the new word (decoding), so it builds reciprocal connections among all three. Sorting pictures by syllables is an oral activity at the syllable level and does not connect sounds to letters."
+ },
+ {
+  "id": "2B-11",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Engagement and motivation",
+  "stem": "A fourth grader in reading intervention says, “I’m just bad at reading,” and resists reading aloud. Which approach is most likely to build his motivation?",
+  "options": [
+   "Have him graph his accuracy and rate on decodable passages so he can see his own growth",
+   "Let him choose a popular grade-level novel to read independently during intervention time",
+   "Excuse him from oral reading until his confidence has a chance to improve on its own",
+   "Offer him a prize for every page he reads aloud, regardless of his accuracy"
+  ],
+  "answer": 0,
+  "explanation": "Motivation in struggling readers grows from experiencing success and seeing concrete evidence of progress; graphing his own accuracy and rate on text matched to taught skills makes that growth visible. A grade-level novel beyond his decoding skills is likely to produce more failure, and rewards unrelated to accuracy do not build skill or self-efficacy."
+ },
+ {
+  "id": "2B-12",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Corrective feedback in spelling",
+  "stem": "During dictation, a student writes “jumpt” for <em>jumped</em>. Which teacher feedback is most effective?",
+  "options": [
+   "“That isn’t right. Erase the whole word and try spelling it again.”",
+   "“Nice try! Words like this one can be really tricky to spell.”",
+   "“That final /t/ is the past-tense ending. Which suffix spells it?”",
+   "“Look up the spelling in your dictionary tonight and copy it three times.”"
+  ],
+  "answer": 2,
+  "explanation": "This feedback is immediate and specific: it pinpoints the error and prompts the student to apply morphological knowledge—the past-tense suffix is spelled “-ed” even when it sounds like /t/—after which the student corrects and rereads the word. General statements such as “That isn’t right” or “Nice try” do not tell the student what to fix, and delayed dictionary copying is neither immediate nor tied to the pattern."
+ },
+ {
+  "id": "2B-13",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Adapting for executive function",
+  "stem": "A student with executive function difficulties often loses track of where the group is during a multi-part reading lesson and has trouble shifting between activities. Which adaptation is most appropriate?",
+  "options": [
+   "Give all of the day’s directions at the start of the lesson so that the student can plan ahead",
+   "Reduce the lesson to a single activity each day so that the student never has to transition",
+   "Post a visual lesson routine, give one-step directions, and check off each part as it ends",
+   "Let the student choose the order of the lesson activities each day to build ownership"
+  ],
+  "answer": 2,
+  "explanation": "A consistent, visible routine with one-step directions and check-offs provides external structure for planning, organizing, and shifting—the executive functions the student struggles with—while keeping every lesson component. Front-loading all directions overloads working memory, and cutting the lesson to one activity gives up the integrated practice a Structured Literacy lesson provides."
+ },
+ {
+  "id": "2B-14",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Adapting for processing speed",
+  "stem": "During a rapid sound-card drill, a student with slow processing speed but accurate letter–sound knowledge needs a few extra seconds to respond. Other students in the group answer before she can, and she has started to stop trying. Which in-lesson adaptation is most appropriate?",
+  "options": [
+   "Build in brief think time before calling for responses, and shorten the drill rather than lowering its difficulty",
+   "Excuse her from the sound-card drill so that her slower responses do not embarrass her in front of the group",
+   "Speed up the drill for the whole group so that she is pushed to answer faster and build automaticity",
+   "Replace the drill with an independent worksheet that she can complete silently at her own pace"
+  ],
+  "answer": 0,
+  "explanation": "A student with slow processing speed knows the material but needs more time to retrieve and respond. Building in a short, signaled think time before everyone answers (or calling on her individually after wait time) lets her respond accurately and stay engaged, and shortening the drill reduces fatigue without removing the skill practice. Speeding up the drill only widens the gap, and excusing her or substituting a worksheet removes the explicit, teacher-led practice she needs."
+ },
+ {
+  "id": "2B-15",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "application",
+  "topic": "Sufficient practice to mastery",
+  "stem": "On Monday, a teacher introduces the “ck” spelling for /k/ after a short vowel, and students read and spell the practice words correctly. By Thursday, many students are spelling <em>duck</em> as “duk” and <em>pick</em> as “pik.” What should the teacher do?",
+  "options": [
+   "Move on to the next pattern, since the students showed success on the day the “ck” pattern was taught",
+   "Send home a list of “ck” words for students to memorize before the next spelling test",
+   "Reteach the pattern with a song, since these students may be auditory learners",
+   "Add brief daily review of “ck” words in reading and spelling until students reach mastery"
+  ],
+  "answer": 3,
+  "explanation": "Accuracy right after initial teaching does not mean a pattern has been learned; students need sufficient distributed practice and cumulative review until they meet a mastery criterion and retain the skill over time. Moving on would build new learning on an unstable foundation, and matching instruction to “auditory learners” reflects the learning-styles idea, which research does not support."
+ },
+ {
+  "id": "2B-16",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "analysis",
+  "topic": "Adapting emphasis based on student responses",
+  "stem": "A teacher records group accuracy for each part of a lesson on the vowel teams “ai” and “ay.” Based on the data, what should the teacher emphasize in the next lesson?",
+  "data": {
+   "title": "Lesson accuracy (group of 5 students)",
+   "headers": [
+    "Lesson part",
+    "Accuracy"
+   ],
+   "rows": [
+    [
+     "Segmenting spoken words with /ā/ into phonemes",
+     "96%"
+    ],
+    [
+     "Reading “ai” and “ay” words in isolation",
+     "92%"
+    ],
+    [
+     "Reading “ai” and “ay” words in decodable sentences",
+     "90%"
+    ],
+    [
+     "Spelling dictated “ai” and “ay” words",
+     "44%"
+    ]
+   ]
+  },
+  "sample": "Common spelling errors:\nplay  → plai\ntrain → trayn\nstay  → stai\nrain  → rayn",
+  "options": [
+   "Reteach phoneme segmentation, since students cannot identify the sounds in the words",
+   "Teach that “ai” spells /ā/ within a word and “ay” at the end, using a sort and dictation",
+   "Move on to the next vowel team, since reading accuracy for this pattern is above 90%",
+   "Have students reread the decodable sentences several times to build their fluency"
+  ],
+  "answer": 1,
+  "explanation": "Segmentation and reading are strong, so students hear /ā/ and can decode both spellings; the breakdown is in choosing between “ai” and “ay” when spelling. Every error reverses the positional pattern (“ai” within a word, “ay” at the end), so explicit teaching of that pattern with a word sort and more dictation targets the need. Moving on would ignore the spelling data—spelling a pattern is harder than reading it."
+ },
+ {
+  "id": "2B-17",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "analysis",
+  "topic": "Adapting strategy based on student responses",
+  "stem": "A teacher checks a student’s readiness to read two-syllable words. Based on the results, which instructional step should come next?",
+  "data": {
+   "title": "Word reading check",
+   "headers": [
+    "Word type",
+    "Accuracy"
+   ],
+   "rows": [
+    [
+     "One-syllable closed words (e.g., vet, clap, shop)",
+     "24/25 (96%)"
+    ],
+    [
+     "Two-syllable words made of two closed syllables",
+     "6/12 (50%)"
+    ]
+   ]
+  },
+  "sample": "Errors on two-syllable words:\nnapkin → “napping”\npicnic → “pick”\nmuffin → “muff”\nbasket → “bask”",
+  "options": [
+   "Model dividing between the middle consonants, reading each closed syllable, and blending",
+   "Teach the student to look for small, familiar words hidden inside each of the longer words",
+   "Have the student reread a passage containing these words until the reading is fluent",
+   "Move the student into leveled texts that contain fewer two-syllable words"
+  ],
+  "answer": 0,
+  "explanation": "The student decodes single closed syllables accurately but stops after the first syllable or guesses on longer words, so the need is a strategy for breaking two-syllable words into decodable parts. Teaching VC/CV division (nap/kin, pic/nic, muf/fin, bas/ket) and blending the closed syllables builds on what the student already knows. Looking for “little words” inside big words is unreliable because the small words often do not match the word’s syllables or vowel sounds (for example, the “at” in <em>father</em>)."
+ },
+ {
+  "id": "2B-18",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "analysis",
+  "topic": "Adapting emphasis: accuracy before rate",
+  "stem": "A third grader has completed timed repeated readings of decodable passages for four sessions. Based on the data, what should the teacher do next?",
+  "data": {
+   "title": "Repeated reading results",
+   "headers": [
+    "Session",
+    "Words correct per minute",
+    "Accuracy"
+   ],
+   "rows": [
+    [
+     "1",
+     "52",
+     "86%"
+    ],
+    [
+     "2",
+     "55",
+     "85%"
+    ],
+    [
+     "3",
+     "54",
+     "87%"
+    ],
+    [
+     "4",
+     "56",
+     "86%"
+    ]
+   ]
+  },
+  "sample": "Typical errors:\nbarn  → “bran”\nshort → “shot”\nturn  → “tun”\ncorn  → “con”",
+  "options": [
+   "Continue timed repeated readings of the same passages until the student reaches 90 words correct per minute",
+   "Switch to a more challenging passage, since the student has stopped making progress",
+   "Encourage the student to skip unknown words so that reading rate continues to increase",
+   "Reteach r-controlled vowels with word-level practice before resuming timed passage reading"
+  ],
+  "answer": 3,
+  "explanation": "Accuracy has stayed well below the roughly 95% expected for productive fluency practice, and the errors consistently involve r-controlled vowels (“ar,” “or,” “ur”). Rate cannot improve meaningfully while accuracy is low, so the teacher should shift emphasis to that specific decoding gap and then return to fluency work. Continuing timed readings would rehearse the same errors and push speed at the expense of accuracy."
+ },
+ {
+  "id": "2B-19",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "analysis",
+  "topic": "Reciprocal activities: morphology, spelling, and vocabulary",
+  "stem": "A fifth grader's results on words that share the Latin root <em>port</em> are shown below. Which activity would best address the student's needs?",
+  "data": {
+   "title": "Word study check: words with the root port",
+   "headers": [
+    "Word",
+    "Read correctly",
+    "Spelled correctly",
+    "Explained meaning"
+   ],
+   "rows": [
+    [
+     "transport",
+     "Yes",
+     "Yes",
+     "No"
+    ],
+    [
+     "export",
+     "Yes",
+     "Yes",
+     "No"
+    ],
+    [
+     "portable",
+     "Yes",
+     "No (“portible”)",
+     "No"
+    ],
+    [
+     "import",
+     "Yes",
+     "Yes",
+     "No"
+    ],
+    [
+     "reporter",
+     "Yes",
+     "Yes",
+     "No"
+    ]
+   ]
+  },
+  "options": [
+   "Timed repeated readings of the word list until the student reads every word quickly",
+   "Instruction in syllable division rules so the student can decode longer words",
+   "A word matrix for <em>port</em> (“carry”), building, reading, spelling, and defining each word",
+   "Copying each word five times and writing it in a sentence as homework"
+  ],
+  "answer": 2,
+  "explanation": "The student already decodes these words and spells most of them, but cannot say what they mean, so the gap is connecting the shared morpheme to meaning. Building words from a matrix (trans + port, port + able, re + port + er) and discussing that <em>port</em> means “carry” links pronunciation, spelling, and vocabulary in one activity, and the word sum port + able also shows how <em>portable</em> is spelled. Faster reading or syllable division would not help, because decoding is already accurate."
+ },
+ {
+  "id": "2B-20",
+  "domain": 2,
+  "subdomain": "2B",
+  "level": "analysis",
+  "topic": "Morphology and spelling: suffix rules",
+  "stem": "After a lesson on adding the suffix “-ing,” a teacher reviews a student’s dictation. Which instruction should the teacher plan next?",
+  "data": {
+   "title": "Dictation results",
+   "headers": [
+    "Dictated word",
+    "Student’s spelling"
+   ],
+   "rows": [
+    [
+     "jumping",
+     "jumping"
+    ],
+    [
+     "baking",
+     "baking"
+    ],
+    [
+     "hopping",
+     "hoping"
+    ],
+    [
+     "running",
+     "runing"
+    ],
+    [
+     "sitting",
+     "siting"
+    ],
+    [
+     "skipping",
+     "skiping"
+    ]
+   ]
+  },
+  "options": [
+   "Reteach the drop-e rule, since the student’s errors involve changing the base word",
+   "Teach the doubling rule for one-syllable, short-vowel words with word sums like hop + ing",
+   "Have the student memorize these spellings as irregular words that do not follow any spelling pattern",
+   "Return to reading CVC words, since the student is unable to decode the base words"
+  ],
+  "answer": 1,
+  "explanation": "The student correctly adds “-ing” to a word ending in a consonant blend (jump) and correctly drops the final “e” (bake), but never doubles the final consonant of one-syllable words with one vowel followed by one consonant (hop, run, sit, skip). Explicit teaching of the doubling (1-1-1) rule with word sums (hop + ing → hopping) targets the gap and shows why doubling matters: it keeps the vowel short and distinguishes <em>hopping</em> from <em>hoping</em>. The drop-e rule is already being applied correctly."
+ },
+ {
+  "id": "2C-01",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "recall",
+  "topic": "Manage behavior: proactive strategies",
+  "stem": "In classroom management, <em>precorrection</em> refers to",
+  "options": [
+   "correcting a student's behavior immediately after the behavior occurs.",
+   "reviewing the previous day's academic errors at the start of the lesson.",
+   "reminding students of an expected behavior just before a situation in which problems are likely.",
+   "removing a student from the group for a brief cool-down period immediately after a behavior problem."
+  ],
+  "answer": 2,
+  "explanation": "Precorrection is a proactive strategy: the teacher anticipates when a problem is likely, such as a transition, and prompts the expected behavior beforehand. Correcting behavior after it happens is reactive, which is the opposite. Reviewing the previous day's errors is an academic routine, not a behavior strategy."
+ },
+ {
+  "id": "2C-02",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "recall",
+  "topic": "Maximize time on task: opportunities to respond",
+  "stem": "Which practice most increases each student's opportunities to respond during small-group instruction?",
+  "options": [
+   "Calling on one volunteer at a time to read each word on the list aloud",
+   "Using choral responses or individual whiteboards so every student answers each item",
+   "Round-robin reading, in which each student reads one paragraph of the text aloud in turn",
+   "Assigning a longer independent worksheet to complete at the end of the lesson"
+  ],
+  "answer": 1,
+  "explanation": "Choral and written responses let every student answer every item, which greatly increases practice and lets the teacher check everyone's understanding. With volunteers or round-robin reading, only one student responds at a time while the others wait. Round-robin reading also tends to embarrass weaker readers."
+ },
+ {
+  "id": "2C-03",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "application",
+  "topic": "Organize materials",
+  "stem": "An interventionist loses several minutes of each 30-minute lesson finding letter tiles, sound cards, and decodable readers for different groups. Which solution best addresses the problem?",
+  "options": [
+   "Skip the activities that use manipulatives on days when time is short.",
+   "Have students find and set out the materials they need at the start of each activity.",
+   "Switch to digital materials only, so nothing needs to be stored or set out.",
+   "Prepare a labeled kit for each group before class, with the day's materials in lesson order."
+  ],
+  "answer": 3,
+  "explanation": "Organizing each group's materials ahead of time, in the order they will be used, recovers instructional time without cutting lesson components. Having students gather materials moves the lost time onto the students. Skipping activities removes practice the students need."
+ },
+ {
+  "id": "2C-04",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "application",
+  "topic": "Create a safe learning environment",
+  "stem": "A sixth grader with dyslexia becomes visibly anxious and refuses when asked to read aloud in front of the whole class. Which response best creates a safe learning environment while keeping reading practice?",
+  "options": [
+   "Have her rehearse the passage with the teacher first, then read aloud to the class after practicing.",
+   "Require the student to read aloud to the class daily so that the anxiety fades through repeated exposure.",
+   "Excuse the student from all oral reading for the rest of the year to protect her self-esteem.",
+   "Have classmates call out corrections when she errs so that she receives immediate feedback."
+  ],
+  "answer": 0,
+  "explanation": "Rehearsing first lets the student build accuracy and confidence privately before she reads in public, so she keeps practicing without being embarrassed. Forcing daily cold reading in front of the class tends to make anxiety worse. Excusing her from all oral reading removes the practice and feedback she needs."
+ },
+ {
+  "id": "2C-05",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "application",
+  "topic": "Manage behavior to maximize learning",
+  "stem": "During small-group instruction, one student repeatedly calls out answers before the other students have time to think. What is the most effective proactive strategy?",
+  "options": [
+   "Ignore the call-outs and continue calling on him whenever he raises his hand to answer.",
+   "Teach and practice a group-response signal, and specifically praise students who wait.",
+   "Remove him from the group until he shows he can control his impulses.",
+   "Have him stay after the lesson to discuss why calling out is disrespectful."
+  ],
+  "answer": 1,
+  "explanation": "A taught, practiced response signal gives everyone time to think and makes the expected behavior clear. Specific praise reinforces it. This prevents the problem rather than reacting to it. Removing the student or talking with him afterward is reactive and costs him instructional time."
+ },
+ {
+  "id": "2C-06",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "application",
+  "topic": "Maximize time on task: transitions",
+  "stem": "A teacher notices that her 30-minute intervention block loses time whenever students move between the table and the carpet for different lesson components. Which change best maximizes instructional time?",
+  "options": [
+   "Reduce the number of lesson components so there are fewer activities to move between.",
+   "Allow free conversation during each transition to keep students relaxed and motivated.",
+   "Conduct all components at the table and teach a brief, practiced routine for switching materials.",
+   "Add a short break between components so students can reset before the next activity."
+  ],
+  "answer": 2,
+  "explanation": "Keeping students in one place and using a quick, rehearsed routine to switch materials removes the lost transition time while keeping every lesson component. Cutting components saves time by removing instruction. Breaks and free conversation add more non-instructional time."
+ },
+ {
+  "id": "2C-07",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "analysis",
+  "topic": "Maximize time on task: analyzing observation data",
+  "stem": "A literacy coach observed a 20-minute small-group lesson and recorded the data below. Which change would most improve student engagement and learning?",
+  "data": {
+   "title": "Observation of a 20-minute small-group lesson (5 students)",
+   "headers": [
+    "Activity",
+    "Minutes",
+    "Total student responses",
+    "Student accuracy"
+   ],
+   "rows": [
+    [
+     "Sound-card review (choral)",
+     "3",
+     "36",
+     "95%"
+    ],
+    [
+     "Teacher explains new spelling rule",
+     "9",
+     "2",
+     "-"
+    ],
+    [
+     "Individual turns reading a word list",
+     "5",
+     "10",
+     "70%"
+    ],
+    [
+     "Round-robin reading of decodable text",
+     "3",
+     "6",
+     "80%"
+    ]
+   ]
+  },
+  "options": [
+   "Shorten the explanation to a brief model, then add guided practice with choral and partner responses.",
+   "Lengthen the sound-card review, because that is the activity in which student accuracy is already highest.",
+   "Replace the decodable text with a teacher read-aloud so that students hear fluent reading.",
+   "Increase the number of individual turns so that each student is called on more often."
+  ],
+  "answer": 0,
+  "explanation": "Nearly half the lesson was teacher talk with almost no student responses. The 70% accuracy that followed shows students needed more guided practice before working alone. A brief model followed by high-response guided practice addresses both problems. Adding individual turns still means only one student responds at a time."
+ },
+ {
+  "id": "2C-08",
+  "domain": 2,
+  "subdomain": "2C",
+  "level": "analysis",
+  "topic": "Manage behavior: analyzing frequency data",
+  "stem": "An interventionist recorded the number of off-task incidents for one student during each segment of a 40-minute lesson for a week. Which conclusion and response do the data best support?",
+  "data": {
+   "title": "Off-task incidents by lesson segment",
+   "headers": [
+    "Segment (length)",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "Sound-card drill (2 min)",
+     "0",
+     "0",
+     "0",
+     "1",
+     "0"
+    ],
+    [
+     "Word reading with teacher (8 min)",
+     "1",
+     "0",
+     "1",
+     "0",
+     "1"
+    ],
+    [
+     "Independent worksheet (15 min)",
+     "5",
+     "6",
+     "4",
+     "6",
+     "5"
+    ],
+    [
+     "Dictation (8 min)",
+     "0",
+     "1",
+     "0",
+     "0",
+     "1"
+    ],
+    [
+     "Text reading with teacher (7 min)",
+     "1",
+     "0",
+     "1",
+     "1",
+     "0"
+    ]
+   ]
+  },
+  "options": [
+   "He has a general attention problem that calls for a behavior plan covering the entire 40-minute block.",
+   "He should be moved to a different intervention group with a new teacher.",
+   "The sound-card drill should be lengthened, since he is most attentive during that segment.",
+   "Off-task behavior clusters in the long worksheet; replace it with shorter, teacher-guided practice."
+  ],
+  "answer": 3,
+  "explanation": "Most incidents happen during the 15-minute independent worksheet, even after accounting for its length. Segments led by the teacher show little off-task behavior. The data point to a problem with that activity, not a general attention problem. Replacing it with shorter, interactive practice addresses the cause directly."
+ },
+ {
+  "id": "3A-01",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "recall",
+  "topic": "Acknowledge conflicts of interest",
+  "stem": "Which situation is a conflict of interest that a reading specialist should disclose?",
+  "options": [
+   "Recommending that a student receive additional small-group intervention during the school day",
+   "Recommending to a parent a private tutoring service that pays the specialist a referral fee",
+   "Recommending that a parent request a comprehensive evaluation from the school team",
+   "Recommending free public library programs that support reading practice at home"
+  ],
+  "answer": 1,
+  "explanation": "A referral fee gives the specialist a personal financial interest in the recommendation, which could influence their professional judgment. That conflict must be disclosed, or the arrangement avoided. The other recommendations bring the specialist no personal benefit."
+ },
+ {
+  "id": "3A-02",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "application",
+  "topic": "Provide accurate information to parents",
+  "stem": "At a conference, a parent asks the interventionist, \"Will this program cure my son's dyslexia?\" Which response is most accurate and ethical?",
+  "options": [
+   "\"Most students who finish the program no longer have dyslexia, so you can be optimistic.\"",
+   "\"That is hard to say; you may want to research dyslexia programs online and then decide for yourself.\"",
+   "\"Dyslexia is lifelong, but strong instruction can greatly improve his reading, and I'll share his data.\"",
+   "\"Instruction can't change dyslexia, so accommodations will be the most important kind of support for him.\""
+  ],
+  "answer": 2,
+  "explanation": "Dyslexia is not cured, but effective instruction can substantially improve reading skills. Sharing progress data keeps the parent informed. Promising the dyslexia will go away misrepresents what intervention can do, even if the intent is to encourage. Saying instruction can't help is also inaccurate."
+ },
+ {
+  "id": "3A-03",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "application",
+  "topic": "Provide accurate information: credentials",
+  "stem": "A teacher completed a 30-hour introductory workshop in an Orton-Gillingham-based program but has not completed the program's certification practicum. A parent asks about her training. What is the most ethical response?",
+  "options": [
+   "Describe the specific training she has completed and state that she is not certified in the program.",
+   "Say that she is \"OG certified,\" because the workshop covered the same core principles.",
+   "Avoid discussing her training and redirect the conversation to the student's progress.",
+   "Describe herself as a \"dyslexia specialist,\" since she uses a dyslexia program every day."
+  ],
+  "answer": 0,
+  "explanation": "Professionals must represent their training and credentials accurately and avoid unfounded claims. Calling herself certified, or using a title she has not earned, misleads the family even if the workshop content was similar. Avoiding the question is not transparent either."
+ },
+ {
+  "id": "3A-04",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "application",
+  "topic": "Equitable treatment under state and federal law",
+  "stem": "A student with dyslexia has a Section 504 plan that provides text-to-speech on tests. His teacher believes he \"needs to learn to work without crutches\" and stops providing text-to-speech on unit tests. What should happen?",
+  "options": [
+   "The teacher may decide, because accommodations are optional at the classroom level.",
+   "The teacher should provide text-to-speech only on days when the student asks for it.",
+   "The teacher should lower the test grade when text-to-speech is used, to keep grading fair.",
+   "The teacher must follow the plan as written and bring any concerns to the 504 team."
+  ],
+  "answer": 3,
+  "explanation": "Accommodations in a Section 504 plan are legally required, and individual teachers cannot drop them on their own. The proper channel for concerns is the 504 team, which can review and revise the plan. Providing the accommodation only on request puts the burden on the student and still does not follow the plan."
+ },
+ {
+  "id": "3A-05",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "application",
+  "topic": "Make decisions in the best interest of students",
+  "stem": "A private tutor has worked with a student weekly for a year. Progress-monitoring data show minimal growth despite faithful implementation of the approach. The family is satisfied and wants to continue. Which action best reflects acting in the student's best interest?",
+  "options": [
+   "Continue the sessions unchanged, since the family is satisfied and wants to keep going.",
+   "Share only the sessions in which the student performed well so that the family stays encouraged and engaged.",
+   "Share the data honestly, discuss changing the approach or intensity, and consider further evaluation.",
+   "Add more weekly sessions using the same approach, since more time should eventually produce growth."
+  ],
+  "answer": 2,
+  "explanation": "Acting in the student's best interest means responding to data that show the current approach isn't working, and telling the family openly. Continuing unchanged, or adding sessions of the same approach, serves the family's comfort or the tutor's business more than the student's needs. Sharing only the good sessions is misleading."
+ },
+ {
+  "id": "3A-06",
+  "domain": 3,
+  "subdomain": "3A",
+  "level": "analysis",
+  "topic": "Provide accurate information: evaluating program claims",
+  "stem": "A parent shares a vendor's brochure and asks whether the program is evidence-based. The brochure's claims and supporting evidence are summarized below. Which response is most accurate and ethical?",
+  "data": {
+   "title": "Vendor brochure summary",
+   "headers": [
+    "Claim",
+    "Evidence offered"
+   ],
+   "rows": [
+    [
+     "\"Research-based and grounded in brain science\"",
+     "White paper by the program's author citing general reading research; no study of the program itself"
+    ],
+    [
+     "\"94% of students improved!\"",
+     "Survey of teachers at schools that bought the program; no comparison group; \"improved\" not defined"
+    ],
+    [
+     "\"Eliminates letter reversals by training visual tracking\"",
+     "Parent testimonials"
+    ]
+   ]
+  },
+  "options": [
+   "\"Yes. It is grounded in brain science, and 94% of students improved with it.\"",
+   "\"No controlled study of this program is cited, so its effectiveness is not established.\"",
+   "\"It is probably effective, since so many schools have already purchased it.\"",
+   "\"Family testimonials are the most relevant evidence, so it will likely work for your child.\""
+  ],
+  "answer": 1,
+  "explanation": "None of the evidence is a controlled study of the program. General research citations, a survey with no comparison group, and testimonials can't establish effectiveness, and visual-tracking training is not a supported treatment for dyslexia. The ethical response gives an accurate picture of the evidence instead of repeating the marketing claims."
+ },
+ {
+  "id": "3B-01",
+  "domain": 3,
+  "subdomain": "3B",
+  "level": "recall",
+  "topic": "Keep student information confidential (FERPA)",
+  "stem": "Under the Family Educational Rights and Privacy Act (FERPA), which statement is generally true?",
+  "options": [
+   "Parents have the right to inspect and review their child's education records.",
+   "Teachers may share a student's test scores with other parents to explain group placements.",
+   "Students' reading scores may be posted on a class data wall with their names displayed.",
+   "Records may be released without consent to any private tutor who holds a teaching certificate."
+  ],
+  "answer": 0,
+  "explanation": "FERPA gives parents the right to inspect and review their child's education records. Those rights transfer to the student at age 18 or on entering postsecondary education. FERPA also protects personally identifiable information from disclosure without consent, so sharing scores with other parents or posting named scores publicly is not permitted."
+ },
+ {
+  "id": "3B-02",
+  "domain": 3,
+  "subdomain": "3B",
+  "level": "application",
+  "topic": "Respect intellectual property",
+  "stem": "A teacher purchased a consumable phonics workbook licensed for use in a single classroom. A colleague asks her to photocopy the entire workbook for the colleague's class. What is the most ethical response?",
+  "options": [
+   "Photocopy the workbook, because it will be used only for educational purposes.",
+   "Scan the workbook to the school's shared drive so that every teacher can use it.",
+   "Make the copies for the colleague, as long as she agrees never to sell or distribute any of them.",
+   "Explain the license terms and suggest that the colleague or school purchase additional copies."
+  ],
+  "answer": 3,
+  "explanation": "Copying an entire consumable workbook goes beyond the license and violates the creator's intellectual property rights. An educational purpose does not change that. The ethical choice is to respect the license and get properly licensed copies."
+ },
+ {
+  "id": "3B-03",
+  "domain": 3,
+  "subdomain": "3B",
+  "level": "application",
+  "topic": "Promote objectivity in reporting results",
+  "stem": "A student's end-of-year assessments show clear gains in decoding but no measurable gains in reading comprehension. The interventionist is preparing a progress report for the student's IEP meeting. Which approach reflects objectivity?",
+  "options": [
+   "Report only the decoding gains, since comprehension was not the main focus of the intervention.",
+   "Describe the student's progress as \"excellent overall\" to recognize her hard work this year.",
+   "Report both results accurately with actual scores, and discuss implications for the next plan.",
+   "Leave out the scores and describe progress in general terms to avoid confusing the family."
+  ],
+  "answer": 2,
+  "explanation": "Objective reporting gives all relevant results accurately, including areas without growth, so the team can make sound decisions. Reporting only the gains, or calling progress \"excellent overall,\" misrepresents the student's performance, even when the intent is to encourage her or because comprehension wasn't the focus."
+ }
+]
